@@ -1,4 +1,13 @@
+# Personal Cookbook!
+
+
 # UX
+## Project Goals:
+
+The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
+The users who wish to avail of the site will be able to create their own **online Cookbook**, 
+allowing them to **create**/upload recepies, **read** through their existing resipies/sample recipies
+stored on the site, **update** their recipies and to **delete** recipes.
 
 ## User Stories
 
