@@ -10,6 +10,16 @@ allowing them to **create**/upload recepies, **read** through their existing res
 stored on the site, **update** their recipies and to **delete** recipes.
 
 ## User Stories
+As a user I would want/expect my Personal Cookbook:   
+* To be able to add my own recipies.
+* To view all my recipies easily.
+* Edit recipies.
+* Update my recepies.
+* Deleted recipies I no longer want.
+* Filter recipies into categories e.g breakfast, lunch and dinner to make it easier to view.
+* For the website to be responsive on different devices.
+* Be able to delete or change my username/password if I please.
+
 
 ## User Goals
 
