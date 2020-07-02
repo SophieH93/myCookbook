@@ -11,16 +11,21 @@ stored on the site, **update** their recipies and to **delete** recipes.
 
 ## User Stories
 As a user I would want/expect my Personal Cookbook:   
-* To be able to **create** my own recipies to an online site.
-* To **view** all my recipies easily.
-* **Edit** recipies.
+* To be able to **create** my own recipes to an online site.
+* To **view** all my recipes easily.
+* **Edit** recipes.
 * **Update** my recepies.
-* **Deleted** recipies I no longer want.
-* Filter recipies into **categories** e.g breakfast, lunch and dinner to make it easier to view.
+* **Deleted** recipes I no longer want.
+* Filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
 * For the website to be **responsive** on different devices.
 * Be able to **delete** or **change** my **username/password/account** if I please.
 
 ## User Goals
+* To be **responsive** on mobile, table and destop devices.
+* Include different **categories** when searching for a recipe e.g breakfast.
+* Website to **protect** the **users information**.
+* Website to be easy to use and **visually** **appealing**.
+* Website to easily allow the user to create, edit, read and delete recipes.
 
 ## Strategy
 
