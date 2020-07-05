@@ -85,6 +85,11 @@ The **form** will contain a **username**, **password** and **confirm password** 
 Again, the navbar and footer will be the same and contain another form to allow the user to enter their **username** and **password** and a **login button**. 
 The form will have validation so if the user enters the wrong username or password an alert will pop up to advise the user that the information isinncorrect and to try again.
 
+## **User account home page:**
+When the user has logged into the website, the **navbar** will be amended to include a **logo, home, my recipies, my account dropdown**. 
+The **dropdown** option will contain **edit account, delete account, logout**.   
+The body of the page will contain the user name e.g *Sophie's Cookbook* and a small paragraph informing the user how the Cookbook works.   
+There is a **add recipe button** under the paragraph to allow the user to get started.
 
 # **Wireframes**
 My Wireframes:  
