@@ -25,6 +25,9 @@
 * Deployment
     * Deploying to Heroku
     * Locally run the project
+* Closing Notes
+* Credits
+* Disclaimer
 
 # UX
 ## Project Goals:
