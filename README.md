@@ -22,6 +22,9 @@
     * Tools
 * Testing
 * Bugs
+* Deployment
+    * Deploying to Heroku
+    * Locally run the project
 
 # UX
 ## Project Goals:
