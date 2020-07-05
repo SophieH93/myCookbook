@@ -16,6 +16,7 @@
 * Features  
     * Current Features
     * Future features
+* Information Architecture
 * Technologies Used
     * Languages
     * Frameworks
@@ -80,6 +81,14 @@ I created my wireframes using [MockFlow](https://www.mockflow.com/) for various 
 # Features
 
 ## Future Features:
+
+# Information Architecture
+
+## Database Choice
+
+## Data Storage Types
+
+##
 
 # Technologies used
 
