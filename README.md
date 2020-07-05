@@ -10,6 +10,9 @@
     * Colours
     * Styling
     * Images
+* Wireframes
+    * Website layout
+    * Flowchart
 
 # UX
 ## Project Goals:
