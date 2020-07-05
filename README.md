@@ -207,18 +207,21 @@ a flash message is triggered to let the user know that their password/username i
 * **Testing-**
 * **Result-**
 
-# **Edit Page:**
+## **Edit Page:**
 
-* **Plan-**
-* **Implementation-**
+* **Plan-** I will need to ensure that when the **edit button** is clicked the user will be able to edit their recipe. I will also need to ensure that the informaiton is properly updated and stored in the database.
+* **Implementation-** This testing will be similar to the create recipe as in to make sure all validation is inputted.
 * **Testing-**
 * **Result-**
 
-* **Plan-**
-* **Implementation-**
+## **My Recipes:**
+
+* **Plan-** I will need to ensure the user is able to view all recipes created when they click on the **My Recipes** nav link and to ensure the edit and delete buttons work too.
+* **Implementation-** I will need to **test** that the **search bar** works, the **fitler** by **category** works, that the **full recipe** displays when the user clicks on a recipe and that the **edit** and **delete buttons** work.
 * **Testing-**
 * **Result-**
 
+## **Delete Recipes:**
 * **Plan-**
 * **Implementation-**
 * **Testing-**
