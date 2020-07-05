@@ -167,6 +167,14 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 # Testing
 Due to the scope of the website, there will need to be a lot of testing required during this project.
 
+
+## **Navbar/footer:**
+
+* **Plan-** I will need to ensure all the links work properly so when the user clicks on one they are brought to the correct page.
+* **Implementation-** Chcek that the nav links go to the correct page and the social media links open in a new tab to the correct website.
+* **Testing-** Manually test the app with **debugger**- debug=True
+* **Result-**
+
 ## **Create an account:**
 * **Plan**-I will need to implement a way that a user will be able to create an account and that their **information** is **stored** in a **database**.        
 This invloves checking that the users **passwords match** when they create a password and confirmed the password.   
@@ -184,6 +192,28 @@ it's stored into the database.
 a flash message is triggered to let the user know that their password/username is incorrect.
 * **Testing-**
 * **Result-**
+
+## **Sign Out:**
+
+* **Plan-**There needs to be a signout feature for the user if they wish to logout of their account.
+* **Implementation-** I will need to create a method for this function.
+* **Testing-**
+* **Result-**
+
+
+
+* **Plan-**
+* **Implementation-**
+* **Testing-**
+* **Result-**
+
+* **Plan-**
+* **Implementation-**
+* **Testing-**
+* **Result-**
+
+
+
 
 
 
