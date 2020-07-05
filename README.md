@@ -16,6 +16,12 @@
 * Features  
     * Current Features
     * Future features
+* Technologies Used
+    * Languages
+    * Frameworks
+    * Tools
+* Testing
+* Bugs
 
 # UX
 ## Project Goals:
