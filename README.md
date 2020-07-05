@@ -53,7 +53,14 @@ As a user I would want/expect my Personal Cookbook:
 ### Images: 
 
 # Wireframes
+My Wireframes:  
+[Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
+)   
+[Tablet](https://github.com/SophieH93/MS3/tree/master/wireframes/tablet)  
+[Mobile](https://github.com/SophieH93/MS3/tree/master/wireframes/mobile)   
+[Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
 
+I created my wireframes using [MockFlow](https://www.mockflow.com/) for various devices.
 # Features
 
 ## Future Features:
