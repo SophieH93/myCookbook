@@ -105,6 +105,14 @@ The different **features** when the user creates a new recipie include the follo
 
 All these features apart from description and image will be **mandatory**.
 
+## **All Recipes**
+*My recipes* page consists of a **search** option and **filter** by meal type e.g dinner. 
+The current recipes created by the user will be displayed with the image of the recipe, name of the recipe and the meal type and cooking time.    
+The user will be able to click on their preferred recipe to view more information.
+
+## **Read recipe**
+
+
 # **Wireframes**
 My Wireframes:  
 [Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
