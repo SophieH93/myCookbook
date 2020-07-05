@@ -81,6 +81,9 @@ The navbar will be the same as the home page along with the footer.
 This page will contain a simple form to allow the user to register to the website.
 The **form** will contain a **username**, **password** and **confirm password** textareas to allow the user to get set up and a **submit** button.   
 
+## **Login Page:**
+Again, the navbar and footer will be the same and contain another form to allow the user to enter their **username** and **password** and a **login button**. 
+The form will have validation so if the user enters the wrong username or password an alert will pop up to advise the user that the information isinncorrect and to try again.
 
 
 # **Wireframes**
