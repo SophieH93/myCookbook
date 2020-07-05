@@ -91,6 +91,20 @@ The **dropdown** option will contain **edit account, delete account, logout**.
 The body of the page will contain the user name e.g *Sophie's Cookbook* and a small paragraph informing the user how the Cookbook works.   
 There is a **add recipe button** under the paragraph to allow the user to get started.
 
+## **Add Recipe**
+The different **features** when the user creates a new recipie include the following:   
+* Add Category **breakfast, lunch, dinner, desert**
+* **Preperation** time.
+* **Cook** time.
+* Recipe **name**
+* Recipe **description**
+* **Ingredients**
+* **Steps**
+* **Image**
+* **Add/Cancel buttons**
+
+All these features apart from description and image will be **mandatory**.
+
 # **Wireframes**
 My Wireframes:  
 [Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
@@ -100,7 +114,7 @@ My Wireframes:
 [Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
 
 I created my wireframes using [MockFlow](https://www.mockflow.com/) for various devices.
-The **edit recipe** page will be the same as the **add recipe** page hence I did not create an official woreframe for this page.   
+The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official woreframe for this page.   
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
 
 # Features
