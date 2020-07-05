@@ -1,6 +1,16 @@
 # Personal Cookbook!
-[user storie](User Stories)
-# Contents
+
+# Table of Contents:
+* UX    
+    * Project Goals   
+    * User Stories
+    * User Goals
+* Design Choices
+    * Fonts
+    * Colours
+    * Styling
+    * Images
+
 # UX
 ## Project Goals:
 
@@ -27,16 +37,8 @@ As a user I would want/expect my Personal Cookbook:
 * Website to be easy to use and **visually** **appealing**.
 * Website to easily allow the user to create, edit, read and delete recipes.
 
-## Strategy
 
-## Scope
-
-## Structure 
-## Skeleton
-
-## Surface
-
-## Design Choice
+# Design Choice
 ### Fonts:
 
 ### Colours:
@@ -46,6 +48,8 @@ As a user I would want/expect my Personal Cookbook:
 ### Styling:
 
 ### Images: 
+
+# Wireframes
 
 # Features
 
