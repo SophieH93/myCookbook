@@ -103,7 +103,7 @@ The different **features** when the user creates a new recipie include the follo
 * **Image**
 * **Add/Cancel buttons**
 
-All these features apart from description and image will be **mandatory**.
+All these features apart from description will be **mandatory**.
 
 ## **All Recipes**
 *My recipes* page consists of a **search** option and **filter** by meal type e.g dinner. 
@@ -111,7 +111,9 @@ The current recipes created by the user will be displayed with the image of the 
 The user will be able to click on their preferred recipe to view more information.
 
 ## **Read recipe**
-
+This page consists of all the **imformation** selected **from** when the user **created a recipe**, the name of the recipe, image, cook/prep time, ingredients and steps.   
+There are two **buttons, edit and delete**.
+The **edit** recipe **page** will be the same as the create recipe page and if the user wished to **delete** the recipe an alert message will appear to confirm if the user wants todelete this recipe.
 
 # **Wireframes**
 My Wireframes:  
