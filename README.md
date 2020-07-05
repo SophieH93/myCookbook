@@ -110,9 +110,9 @@ All these features apart from description will be **mandatory**.
 The current recipes created by the user will be displayed with the image of the recipe, name of the recipe and the meal type and cooking time.    
 The user will be able to click on their preferred recipe to view more information.
 
-## **Read recipe**
+## **Read Recipe**
 This page consists of all the **imformation** selected **from** when the user **created a recipe**, the name of the recipe, image, cook/prep time, ingredients and steps.   
-There are two **buttons, edit and delete**.
+There are two **buttons, edit and delete**.  
 The **edit** recipe **page** will be the same as the create recipe page and if the user wished to **delete** the recipe an alert message will appear to confirm if the user wants todelete this recipe.
 
 # **Wireframes**
@@ -139,7 +139,7 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 
 ## Data Storage Types
 
-##
+
 
 # Technologies used
 
@@ -165,6 +165,27 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 * [Dirty Markup Formatter](https://www.10bestdesign.com/dirtymarkup/)
 
 # Testing
+Due to the scope of the website, there will need to be a lot of testing required during this project.
+
+## **Create an account:**
+* **Plan**-I will need to implement a way that a user will be able to create an account and that their **information** is **stored** in a **database**.        
+This invloves checking that the users **passwords match** when they create a password and confirmed the password.   
+I will need to **research** the best way to create this feature that's also easy for the user to create an account and properly hash the password when 
+it's stored into the database.
+
+* **Implementation** Sessions storage and [bcrypt](https://pypi.org/project/bcrypt/). Bcrypt is a password hashing function.  
+* **Testing** - create a few accounts to check what values are passed and stored in the database. Test that passwords are the same.
+* **Result**
+
+## **Login to Account:**
+
+* **Plan-** I will need to create a form for the user to login to their account. I will need to make sure the form is validated correctly.
+* **Implementation-**To check the information from the form matches the information that is stored in the users collections and if it does not match,
+a flash message is triggered to let the user know that their password/username is incorrect.
+* **Testing-**
+* **Result-**
+
+
 
 # Bugs
 
