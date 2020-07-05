@@ -222,13 +222,22 @@ a flash message is triggered to let the user know that their password/username i
 * **Result-**
 
 ## **Delete Recipes:**
-* **Plan-**
-* **Implementation-**
+
+* **Plan-** I will need to create a [sweetalert](https://sweetalert2.github.io/) that asks the user to confirmm if they actually want to delete the recipe.   
+If the answer is **Yes** then I will need to ensure the recipe is delete from the database and a confirmation is displayed to the user.   
+if the answer is **No** I need to ensure the user is brought back to the recipe.
+* **Implementation-** Test theses fectures work and check the database to see if the recipe is removed.
 * **Testing-**
 * **Result-**
 
 
 
+## **Delete Recipes:**
+
+* **Plan-**
+* **Implementation-**
+* **Testing-**
+* **Result-**
 
 
 # Bugs
