@@ -1,6 +1,6 @@
 # Personal Cookbook!
 
-# Table of Contents:
+# **Table of Contents:**
 * UX    
     * Project Goals   
     * User Stories
@@ -30,7 +30,7 @@
 * Credits
 * Disclaimer
 
-# UX
+# **UX**
 ## Project Goals:
 
 The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
@@ -57,7 +57,7 @@ As a user I would want/expect my Personal Cookbook:
 * Website to easily allow the user to create, edit, read and delete recipes.
 
 
-# Design Choice
+# **Design Choice**
 ### Fonts:
 
 ### Colours:
@@ -68,7 +68,22 @@ As a user I would want/expect my Personal Cookbook:
 
 ### Images: 
 
-# Wireframes
+# **Structure**
+The Website will consist of serveral pages.   
+## **Home Page:**
+This is the main page of the website that will consist of some information
+about function of website and **sample recipes** so the user can visualise what the recipie will look like.   
+The **navbar** which is fixed to the top of the page, will consits of a **logo, login and register** options.   
+The **footer** will contain some **social media** icons.
+
+## **Register Page:**
+The navbar will be the same as the home page along with the footer. 
+This page will contain a simple form to allow the user to register to the website.
+The **form** will contain a **username**, **password** and **confirm password** textareas to allow the user to get set up and a **submit** button.   
+
+
+
+# **Wireframes**
 My Wireframes:  
 [Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
 )   
@@ -79,6 +94,8 @@ My Wireframes:
 I created my wireframes using [MockFlow](https://www.mockflow.com/) for various devices.
 
 # Features
+
+
 
 ## Future Features:
 
