@@ -200,7 +200,14 @@ a flash message is triggered to let the user know that their password/username i
 * **Testing-**
 * **Result-**
 
+## Create Recipe:
 
+* **Plan-** I will need to ensure **validation** is inputted on the forms, to make sure the recipe cannot be created unless all required fieds are complete.
+* **Implementation-** Create a recipe without completing a required field e.g ingredients to see if a **flash message** will display to advise the user to fill out required field.
+* **Testing-**
+* **Result-**
+
+# **Edit Page:**
 
 * **Plan-**
 * **Implementation-**
@@ -212,6 +219,10 @@ a flash message is triggered to let the user know that their password/username i
 * **Testing-**
 * **Result-**
 
+* **Plan-**
+* **Implementation-**
+* **Testing-**
+* **Result-**
 
 
 
