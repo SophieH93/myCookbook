@@ -13,6 +13,9 @@
 * Wireframes
     * Website layout
     * Flowchart
+* Features  
+    * Current Features
+    * Future features
 
 # UX
 ## Project Goals:
@@ -61,6 +64,7 @@ My Wireframes:
 [Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
 
 I created my wireframes using [MockFlow](https://www.mockflow.com/) for various devices.
+
 # Features
 
 ## Future Features:
