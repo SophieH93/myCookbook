@@ -91,7 +91,7 @@ The **dropdown** option will contain **edit account, delete account, logout**.
 The body of the page will contain the user name e.g *Sophie's Cookbook* and a small paragraph informing the user how the Cookbook works.   
 There is a **add recipe button** under the paragraph to allow the user to get started.
 
-## **Add Recipe**
+## **Create Recipe**
 The different **features** when the user creates a new recipie include the following:   
 * Add Category **breakfast, lunch, dinner, desert**
 * **Preperation** time.
