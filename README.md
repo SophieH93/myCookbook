@@ -237,6 +237,49 @@ if the answer is **No** I need to ensure the user is brought back to the recipe.
 # Bugs
 
 # Deployment 
+## **Run Locally:**
+* **Open** your prefered **IDE** (I used Gitpod)
+* **Run MongoDB** Atlas on oyur machine (your database)
+    * Click [here](https://docs.atlas.mongodb.com/) to read how to set up your Mongo Atlas.
+* In your terminal **install** [Pip](https://pip.pypa.io/en/stable/installing/), [Python3](https://www.python.org/downloads/) and [Git](https://git-scm.com/)   
+
+**Directions**:   
+1. Clone this repository into your IDE of your choice by pasting this command
+into the terminal 
+```
+ git clone https://github.com/SophieH93/myCookbook 
+```
+**Alternatively**, you can **save a copy** of this repository by clicking the green button **"Clone or download"** , then **"Download Zip" button**, and after extract the Zip file to your folder.
+
+2. In your terminal **change direcrory** (cd) to the correct file location or open a terminal session in the unzip folder.
+
+3. Enter the following commannd
+```
+python -m .venv venv
+```
+
+4. **Initilaize** the environment by using the following command.
+```
+.venv\bin\activate 
+```
+
+5. **Install** all requiremetns by putting this command into your terminal:
+```
+pip3 install -r requirements.txt
+```
+
+6. Set up **environment variables**:
+    * Create **.env file** in the root directory.
+    * On the top of the file add **import os** to set the environment variables in the operating system.
+    * Set the connection to your MongoDB database**(MONGO_URI)** and a **SECRET_KEY** with the input:
+    ```
+    os.environ["SECRET_KEY"] = "YourSecretKey"
+    os.environ["MONGO_URI"] = "YourMongoURI
+    ```
+7. **Run application** using flask run or in terminal type 
+    ```
+    python3 app.py
+    ```
 
 # Closing Notes
 
