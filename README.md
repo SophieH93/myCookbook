@@ -35,12 +35,13 @@
 
 The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
 The users who wish to avail of the site will be able to create their own **online Cookbook**, 
-allowing them to **create**/upload recepies, **read** through their existing resipies/sample recipies
-stored on the site, **update** their recipies and to **delete** recipes.
+allowing them to **create**/upload recepies, **read** through their existing recipes/sample recipes
+stored on the site, **update** their recipes and to **delete** recipes.
 
 ## User Stories
 As a user I would want/expect my Personal Cookbook:   
-* To be able to **create** my own recipes to an online site.
+* For my **site** to be **secure**.
+* To be able to **create** my own recipes.
 * To **view** all my recipes easily.
 * **Edit** recipes.
 * **Update** my recepies.
@@ -48,6 +49,7 @@ As a user I would want/expect my Personal Cookbook:
 * Filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
 * For the website to be **responsive** on different devices.
 * Be able to **delete** or **change** my **username/password/account** if I please.
+* to view **sample recipes** layout.
 
 ## User Goals
 * To be **responsive** on mobile, table and destop devices.
