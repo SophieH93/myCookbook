@@ -56,19 +56,18 @@ As a user I would want/expect my Personal Cookbook:
 * Include different **categories** when searching for a recipe e.g breakfast.
 * Website to **protect** the **users information**.
 * Website to be easy to use and **visually** **appealing**.
-* Website to easily allow the user to create, edit, read and delete recipes.
+* Website to easily allow the user to **create, edit, read and delete** recipes.
 
 
 # **Design Choice**
-### Fonts:
+### **Typography**:
 
-### Colours:
+### **Colours**:
 
-### Icons:
+### **Icons**: I will use [Fontawesome](https://fontawesome.com/icons?d=gallery) for the icons in my website. Icons are a good way to enhance user-friendly experience.
 
-### Styling:
-
-### Images: 
+### **Styling**: May use [Bootswatch](https://bootswatch.com/journal/) and [Bootstrap Themes](https://startbootstrap.com/) to style my website.
+### **Images**: 
 
 # **Structure**
 The Website will consist of serveral pages.   
