@@ -60,39 +60,41 @@ As a user I would want/expect my Personal Cookbook:
 
 
 # **Design Choice**
-### **Typography**:
 
-### **Colours**:
+ **Typography**:
 
-### **Icons**: I will use [Fontawesome](https://fontawesome.com/icons?d=gallery) for the icons in my website. Icons are a good way to enhance user-friendly experience.
+ **Colours**: 
 
-### **Styling**: May use [Bootswatch](https://bootswatch.com/journal/) and [Bootstrap Themes](https://startbootstrap.com/) to style my website.
-### **Images**: 
+ **Icons**: I will use [Fontawesome](https://fontawesome.com/icons?d=gallery) for the icons in my website. Icons are a good way to enhance user-friendly experience.
+
+ **Styling**: May use [Bootswatch](https://bootswatch.com/journal/) and [Bootstrap Themes](https://startbootstrap.com/) to style my website.
+ **Images**: 
 
 # **Structure**
 The Website will consist of serveral pages.   
 ## **Home Page:**
 This is the main page of the website that will consist of some information
-about function of website and **sample recipes** so the user can visualise what the recipie will look like.   
+about the function of website and **sample recipes** so the user can visualise what their recipes will look like.   
 The **navbar** which is fixed to the top of the page, will consits of a **logo, login and register** options.   
 The **footer** will contain some **social media** icons.
 
 ## **Register Page:**
 The navbar will be the same as the home page along with the footer. 
-This page will contain a simple form to allow the user to register to the website.
+This page will contain a simple **form** to allow the user to register to the website.
 The **form** will contain a **username**, **password** and **confirm password** textareas to allow the user to get set up and a **submit** button.   
 
 ## **Login Page:**
-Again, the navbar and footer will be the same and contain another form to allow the user to enter their **username** and **password** and a **login button**. 
-The form will have validation so if the user enters the wrong username or password an alert will pop up to advise the user that the information isinncorrect and to try again.
+Again, the navbar and footer will be the same and contain another **form** to allow the user to enter their **username** and **password** and a **login button**. 
+The form will have **validation** so if the user enters the wrong username or password an **alert** will pop up to advise the user that the information is inncorrect and to try again.
 
 ## **User account home page:**
 When the user has logged into the website, the **navbar** will be amended to include a **logo, home, my recipies, my account dropdown**. 
-The **dropdown** option will contain **edit account, delete account, logout**.   
+The **dropdown** option will contain **edit account, delete account, logout**.    
+The **edit account** will allow the user to amend their password.  
 The body of the page will contain the user name e.g *Sophie's Cookbook* and a small paragraph informing the user how the Cookbook works.   
 There is a **add recipe button** under the paragraph to allow the user to get started.
 
-## **Create Recipe**
+## **Create Recipe:**
 The different **features** when the user creates a new recipie include the following:   
 * Add Category **breakfast, lunch, dinner, desert**
 * **Preperation** time.
@@ -106,13 +108,13 @@ The different **features** when the user creates a new recipie include the follo
 
 All these features apart from description will be **mandatory**.
 
-## **All Recipes**
+## **All Recipes:**
 *My recipes* page consists of a **search** option and **filter** by meal type e.g dinner. 
 The current recipes created by the user will be displayed with the image of the recipe, name of the recipe and the meal type and cooking time.    
 The user will be able to click on their preferred recipe to view more information.
 
-## **Read Recipe**
-This page consists of all the **imformation** selected **from** when the user **created a recipe**, the name of the recipe, image, cook/prep time, ingredients and steps.   
+## **Read Recipe:**
+This page consists of all the **imformation** selected **from** when the user **created their recipe**, the name of the recipe, image, cook/prep time, ingredients and steps.   
 There are two **buttons, edit and delete**.  
 The **edit** recipe **page** will be the same as the create recipe page and if the user wished to **delete** the recipe an alert message will appear to confirm if the user wants todelete this recipe.
 
