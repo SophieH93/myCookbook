@@ -126,8 +126,8 @@ My Wireframes:
 [Mobile](https://github.com/SophieH93/MS3/tree/master/wireframes/mobile)   
 [Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
 
-I created my wireframes using [MockFlow](https://www.mockflow.com/) for various devices.
-The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official woreframe for this page.   
+I created my wireframes and Flowchart using [MockFlow](https://www.mockflow.com/) for various devices.
+The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official wireframe for this page.   
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
 
 # Features
