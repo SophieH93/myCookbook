@@ -203,7 +203,7 @@ a flash message is triggered to let the user know that their password/username i
 * **Testing-**
 * **Result-**
 
-## Create Recipe:
+## **Create Recipe:**
 
 * **Plan-** I will need to ensure **validation** is inputted on the forms, to make sure the recipe cannot be created unless all required fieds are complete.
 * **Implementation-** Create a recipe without completing a required field e.g ingredients to see if a **flash message** will display to advise the user to fill out required field.
@@ -230,15 +230,6 @@ a flash message is triggered to let the user know that their password/username i
 If the answer is **Yes** then I will need to ensure the recipe is delete from the database and a confirmation is displayed to the user.   
 if the answer is **No** I need to ensure the user is brought back to the recipe.
 * **Implementation-** Test theses fectures work and check the database to see if the recipe is removed.
-* **Testing-**
-* **Result-**
-
-
-
-## **Delete Recipes:**
-
-* **Plan-**
-* **Implementation-**
 * **Testing-**
 * **Result-**
 
