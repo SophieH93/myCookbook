@@ -281,6 +281,34 @@ pip3 install -r requirements.txt
     python3 app.py
     ```
 
+## **Deploying to heroku:**
+
+1. **Create** a **requirements.txt** file by adding the following to your terminal.
+    ```
+    pip3 freeze > requirements.txt
+    ```
+2. Create a **Procfile**, in order to tell Heroku how to run the project. Procfile must start with a capital 'P':
+    ```
+    echo web: python run.py > Procfile
+    ```
+3. Push these to your repository.
+
+4. Create a new app on Heroku, assin a unique name and set your region (I used Europe)
+
+5. Fomr the dashboard, click **Deploy -> Deployment method -> GitHub**
+
+6. Link Heroku to your IDE by inputting the following into your command:
+    ```
+    heroku login
+    git push heroku master
+    ```
+
+7. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
+    * IP: 0.0.0.0
+    * PORT: 5000
+
+8. Click **Open App** to view the app.
+    
 # Closing Notes
 
 # Credits
