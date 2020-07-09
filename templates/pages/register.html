@@ -19,12 +19,12 @@
               <hr>
 
               <div class="form-label-group">
-                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
               
               </div> <br>
               
               <div class="form-label-group">
-                <input type="password" name="confirm_password"id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+                <input type="password" name="confirm_password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
                 </div><br>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button> <br>
@@ -37,5 +37,20 @@
       </div>
     </div>
   </div>
+ <script>
+       var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirmPassword");
+
+    function validatePassword(){
+    if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+        confirm_password.setCustomValidity('');
+    }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+ </script>
 {% endblock %}
 
