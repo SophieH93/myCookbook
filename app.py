@@ -57,17 +57,17 @@ def register():
 # My Recipes
 @app.route('/recipes')
 def recipes():
-    return render_template('pages/recipes')
+    return render_template('pages/recipes.html')
 
 # Add Recipes
 @app.route('/add_recipe')
 def add_recipe():
-    return render_template('pages/add_recipe')
+    return render_template('pages/add_recipe.html')
 
 # Logout
 @app.route('/logout')
 def logout():
-    return render_template('pages/logout')
+    return render_template('pages/logout.html')
 
 
 
