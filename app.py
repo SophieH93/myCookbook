@@ -42,7 +42,7 @@ def register():
     if request.method == "POST":
         users = mongo.db.users
         existing_user = users.find_one({'name': request.form['username']})
-       
+        flash('You have been successfully Registered!')
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert({'name' : request.form['username'], 'password' : hashpass})
@@ -54,7 +54,20 @@ def register():
 
     return render_template('pages/register.html')
 
+# My Recipes
+@app.route('/recipes')
+def recipes():
+    return render_template('pages/recipes')
 
+# Add Recipes
+@app.route('/add_recipe')
+def add_recipe():
+    return render_template('pages/add_recipe')
+
+# Logout
+@app.route('/logout')
+def logout():
+    return render_template('pages/logout')
 
 
 
