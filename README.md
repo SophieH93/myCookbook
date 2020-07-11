@@ -133,19 +133,13 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 ## Future Features:
 
 # Information Architecture
- Types of data stored in the MongoDB database are:   
- * ObjectID
+
+## Data Storage Types
+* ObjectID
  * String
  * Boolean
  * Array
- * Binary
-
-
-
-## Database Choice
-
-## Data Storage Types
-
+ 
 
 
 # Technologies used
@@ -158,10 +152,10 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 * [JSON]
 
 ## Frameworks
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-* 
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)* 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/
+
 
 
 ## Tools 
@@ -191,9 +185,11 @@ This invloves checking that the users **passwords match** when they create a pas
 I will need to **research** the best way to create this feature that's also easy for the user to create an account and properly hash the password when 
 it's stored into the database.
 
-* **Implementation** Sessions storage and [bcrypt](https://pypi.org/project/bcrypt/). Bcrypt is a password hashing function.  
-* **Testing** - create a few accounts to check what values are passed and stored in the database. Test that passwords are the same.
-* **Result**
+* **Implementation-** Import session and bcrypt was required to handle the request. The code checks that the passwords entered match to avoid any typos and then checks if the username entered already exists in the database.
+* **Testing** - I created few accounts to check what values are passed and stored in the database and that the passwords match and used [bcrypt](https://pypi.org/project/bcrypt/) for password hashing.   
+To achieve this I followed [pretty printed Youtube viedo](https://www.youtube.com/watch?v=vVx1737auSE) to create the Registration form.
+* **Result-** This tests passed and the user's username and passwords are stored in the MongoBD database. A flash message will appear if the username already exists
+and if the user's password do no match a alert appears to advise the user the password do not match.
 
 ## **Login to Account:**
 
@@ -320,6 +316,6 @@ pip3 install -r requirements.txt
 # Closing Notes
 
 # Credits
-
+https://www.youtube.com/watch?v=vVx1737auSE for creating registration/login
 # Disclaimer
 **This websit is for educational purposes only.**
