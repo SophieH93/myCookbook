@@ -1,5 +1,14 @@
 {% extends 'layout/base.html' %}
 {% block content %}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="flash">
+        <p>{{ message }}</p>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
     <div class="jumbotron">
   <h1 class="display-3">My Cookbook!</h1>
   <p class="lead">Tired of having to look up recipes on the internet or in a Cookbook? <br>
