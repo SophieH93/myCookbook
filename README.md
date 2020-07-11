@@ -316,6 +316,6 @@ pip3 install -r requirements.txt
 # Closing Notes
 
 # Credits
-https://www.youtube.com/watch?v=vVx1737auSE for creating registration/login
+[Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**
 # Disclaimer
 **This websit is for educational purposes only.**
