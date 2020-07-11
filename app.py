@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, session, redirect, request
+from flask import Flask, render_template, url_for, session, redirect, request, flash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 import bcrypt
@@ -26,14 +26,16 @@ def index():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():   
-    users = mongo.db.users
-    login_user = users.find_one({'name' : request.form['username']})
-    if login_user:
-        if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
-            session['username'] = request.form['username']
-            return render_template('index.html')        
-    return 'Invalide username/password combination'
-
+    if request.method == 'POST':
+        users = mongo.db.users
+        login_user = users.find_one({'name' : request.form['username']})
+        if login_user:
+            if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
+                session['username'] = request.form['username']
+                flash('You have been successfully logged in!')
+                return redirect(url_for('index'))        
+        return 'Invalide username/password combination'
+    return render_template('pages/login.html')
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -45,6 +47,7 @@ def register():
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert({'name' : request.form['username'], 'password' : hashpass})
             session['username'] = request.form['username']
+            
             return redirect(url_for('index'))
 
         return 'That username already exists!'
