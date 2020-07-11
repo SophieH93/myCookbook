@@ -24,12 +24,15 @@ def index():
     return render_template('pages/index.html', page_title="Home")
 
 
-@app.route("/login")
-def login():
-    if request.method == "POST":
-        print("hello you there")
-
-    return render_template('pages/login.html', page_title="Login")
+@app.route("/login", methods=["GET", "POST"])
+def login():   
+    users = mongo.db.users
+    login_user = users.find_one({'name' : request.form['username']})
+    if login_user:
+        if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+            session['username'] = request.form['username']
+            return render_template('index.html')        
+    return 'Invalide username/password combination'
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -47,9 +50,6 @@ def register():
         return 'That username already exists!'
 
     return render_template('pages/register.html')
-
-
-
 
 
 
