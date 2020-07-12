@@ -181,7 +181,7 @@ Due to the scope of the website, there will need to be a lot of testing required
 * **Testing-** Use **session variables** and jinja **if/else** statements for the navigation so when the user logs in they are displayed with a different navbar.    
   Use **target="_blank"** to open the **social** media links in a new tab.
 
-* **Result-**Social media links open in a new tab to the correct url. When the user logs into the site the **navbar** changes to display '**Recipes, Add Recipes, Logout."**
+* **Result-** Social media links open in a new tab to the correct url. When the user logs into the site the **navbar** changes to display '**Recipes, Add Recipes, Logout."**
 
 ## **Create an account:**
 * **Plan**-I will need to implement a way that a user will be able to create an account and that their **information** is **stored** in a **database**.        
@@ -205,14 +205,18 @@ and if the user's password do no match a alert appears to advise the user the pa
 a flash message is triggered to let the user know that their password/username is incorrect.
 
 * **Testing-** I inputted the **wrong informaton** to make sure the **flash error** displays and then created the **correct** login **information** and a **flash messages** displayes to tell the user they have logged in successfully.
+
 * **Result-** The test passed and I was able to sign in the account.
 
 ## **Sign Out:**
 
 * **Plan-**There needs to be a signout feature for the user if they wish to logout of their account.
-* **Implementation-** I will need to create a method for this function.
-* **Testing-**
-* **Result-**
+
+* **Implementation-** Create a route and method using [session.pop](https://www.tutorialspoint.com/flask/flask_sessions.htm#:~:text=To%20release%20a%20session%20variable%20use%20pop()%20method.&text=The%20following%20code%20is%20a,'username'%20is%20not%20set.&text=As%20user%20browses%20to%20'%2Flogin,opens%20up%20a%20login%20form.).
+
+* **Testing-** Click on the logout button in the navigation and the user should be signed out and returned the to home page.
+
+* **Result-** The test **passed** as the session was cleared out and the user was no longer signed in.
 
 ## **Create Recipe:**
 
