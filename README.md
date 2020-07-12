@@ -220,10 +220,10 @@ a flash message is triggered to let the user know that their password/username i
 
 ## **Create Recipe:**
 
-* **Plan-** I will need to ensure **validation** is inputted on the forms, to make sure the recipe cannot be created unless all required fieds are complete.
-* **Implementation-** Create a recipe without completing a required field e.g ingredients to see if a **flash message** will display to advise the user to fill out required field.
-* **Testing-**
-* **Result-**
+* **Plan-** I will need to ensure **validation** is inputted on the forms, to make sure the recipe cannot be created unless all required fieds are complete. I will also need to ensure the recipe is added to the Mongo Database.
+* **Implementation-** I will use [flask-wtf forms](https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/) to create the Add recipe form which will also include validation and then create a new route to insert the recipe to the database.
+* **Testing-** If a field is not complete the user will not be able to submit their recipe and the field will be highlighted. The user is redirected to the 'Recipes' page when the form is complete. The recipe is inerted into the database successfully.
+* **Result-** Working properly. Recipe stored into the MongoDB under the 'recipes' collection.
 
 ## **Edit Page:**
 
