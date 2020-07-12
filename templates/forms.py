@@ -7,7 +7,8 @@ class addRecipeForm(FlaskForm):
     recipe_name = StringField('Recipe Name', 
                                 validators=[DataRequired()])
     recipe_description = TextAreaField('Recipe Description',
-                                validators=[DataRequired(), Length(min=3, max=20)])                        
+                                validators=[DataRequired(), Length(min=3, max=20)])    
+    prep_time = IntegerField('Prep Time (min)', validators=[DataRequired()])                                                
     cooking_time = IntegerField('Cooking Time (min)', validators=[DataRequired()])
     category = SelectField('Category')
     ingredients = TextAreaField('Ingredients',
