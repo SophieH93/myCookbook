@@ -1,5 +1,6 @@
 {% extends 'layout/base.html' %}
 {% block content %}
+
 {% with messages = get_flashed_messages() %}
     {% if messages %}
     {% for message in messages %}
@@ -9,21 +10,59 @@
     {% endfor %}
     {% endif %}
 {% endwith %}
-    <div class="jumbotron">
-  <h1 class="display-3">My Cookbook!</h1>
-  <p class="lead">Tired of having to look up recipes on the internet or in a Cookbook? <br>
-  Sign up now to create your own personalise online Cookbook!</p>
-  <hr class="my-4">
-  <p>My Cookbook allows you to add your own recipes and store them into different categories. Great way to easily view all your favourite 
-  recipes in one place!</p>
-  <p class="lead">
-    {% if session.username %} 
-    <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
-    {% else %}
-    <a class="btn btn-primary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
-    <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Signin</a>      
-    {% endif %}
-  </p>
+
+ <div class="jumbotron">
+    <h1 class="display-3">My Cookbook!</h1>
+    <p class="lead">Tired of having to look up recipes on the internet or in a Cookbook? <br>
+    Sign up now to create your own personalise online Cookbook!</p>
+    <hr class="my-4">
+    <p>My Cookbook allows you to add your own recipes and store them into different categories. Great way to easily view all your favourite 
+    recipes in one place!</p>
+    <p class="lead">
+        {% if session.username %} 
+        <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
+        {% else %}
+        <a class="btn btn-primary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Signin</a>      
+        {% endif %}
+    </p>
+</div>
+
+<div class="container">
+    <div class="row">  
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-primary mb-3">
+            <div class="card-header">ADD YOUR RECIPES</div>        
+            <div class="card-body">            
+                <p class="card-text">Add your own recipes</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-primary mb-3">
+            <div class="card-header">VIEW RECIPES</div>
+            <div class="card-body">
+                <p class="card-text">Read all your recipes and filter them by categories e.g dinner</p>
+            </div>
+        </div>
+    </div>  
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-primary mb-3">
+            <div class="card-header">EDIT YOUR RECIPES</div>
+            <div class="card-body">
+                <p class="card-text">Update your recipes easily</p>
+             </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-primary mb-4">
+            <div class="card-header">DELETE YOUR RECIPES</div>
+            <div class="card-body">
+                <p class="card-text">Simply delete the recipes you no longer want</p>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>
 
 
