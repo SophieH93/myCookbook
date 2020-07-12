@@ -210,7 +210,7 @@ a flash message is triggered to let the user know that their password/username i
 
 ## **Sign Out:**
 
-* **Plan-**There needs to be a signout feature for the user if they wish to logout of their account.
+* **Plan-** There needs to be a signout feature for the user if they wish to logout of their account.
 
 * **Implementation-** Create a route and method using [session.pop](https://www.tutorialspoint.com/flask/flask_sessions.htm#:~:text=To%20release%20a%20session%20variable%20use%20pop()%20method.&text=The%20following%20code%20is%20a,'username'%20is%20not%20set.&text=As%20user%20browses%20to%20'%2Flogin,opens%20up%20a%20login%20form.).
 
@@ -330,6 +330,7 @@ pip3 install -r requirements.txt
 # Credits
 [Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**
 https://www.youtube.com/watch?v=803Ei2Sq-Zs&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=7 
+[Corey Schafer](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the flaskwt form for crating a recipe and how to add insert to the database.
 
 # Disclaimer
 **This websit is for educational purposes only.**
