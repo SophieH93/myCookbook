@@ -16,16 +16,66 @@ app.config["MONGO_DBNAME"] = "myCookbook"
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY')
 
-
 mongo = PyMongo(app)
-
 
 
 @app.route("/")
 @app.route("/index")
 def index():
     
-    return render_template('pages/index.html')
+
+   return render_template('pages/index.html', recipes=recipes)
+
+
+
+
+# My Recipes
+@app.route('/recipes')
+def recipes():
+    
+    return render_template('pages/recipes.html', recipe=mongo.db.recipes.find())
+
+# Add Recipes
+@app.route('/add_recipe')   
+def add_recipe():
+    '''
+    The function calls the addRecipeForm class from forms.py
+    to display the form for adding a recipe.
+    '''
+    form = addRecipeForm()
+    return render_template('pages/add_recipe.html', form=form)
+
+
+# Insert recipe to database
+@app.route("/insert_recipe", methods=["GET", "POST"])
+def insert_recipe():       
+    """
+    Add the user's inserted data in the database and redirect
+    the user to recipes.html page.
+    """
+    recipes = mongo.db.recipes 
+
+    recipes.insert_one( {
+            "recipe_name": request.form.get("recipe_name"),
+            "description": request.form.get("recipe_description"),            
+            "prep_time": request.form.get("prep_time"),
+            "cooking_time": request.form.get("cooking_time"),
+            "ingredients": request.form.get('recipe_ingredients'),
+            "steps": request.form.get('steps'),
+            "image": request.form.get("image")
+        })
+    
+    return redirect(url_for('recipes'))
+       
+       
+
+
+
+
+
+
+
+
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -55,54 +105,6 @@ def register():
             return redirect(url_for('index'))
         return 'That username already exists!'
     return render_template('pages/register.html')
-
-# My Recipes
-@app.route('/recipes')
-def recipes():
-    return render_template('pages/recipes.html', )
-
-# Add Recipes
-@app.route('/add_recipe')   
-def add_recipe():
-    '''
-    The function calls the addRecipeForm class from forms.py
-    to display the form for adding a recipe.
-    '''
-    form = addRecipeForm()
-    return render_template('pages/add_recipe.html', form=form)
-
-
-# Insert recipe to database
-@app.route("/insert_recipe", methods=["GET", "POST"])
-def insert_recipe():       
-    """
-    Add the user's inserted data in the database and redirect
-    the user to recipes.html page.
-    """
-        recipes = mongo.db.recipes 
-
-        recipes.insert_one( {
-                    "recipe_name": request.form.get("recipe_name"),
-                    "description": request.form.get("recipe_description"),            
-                    "prep_time": request.form.get("prep_time"),
-                    "cooking_time": request.form.get("cooking_time"),
-                    "ingredients": request.form.get('recipe_ingredients'),
-                    "steps": request.form.get('steps'),
-                    "image": request.form.get("recipe_image")
-                })
-        
-        return redirect(url_for('recipes'))
-       
-       
-
-
-
-
-
-
-
-
-
 
 # Logout
 @app.route('/logout')
