@@ -1,6 +1,48 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-
-
+<h1>Add Recipe</h1>
+ <form method="POST">
+    {{ form.hidden_tag() }}
+<div class="row">
+<!--Recipe Name-->
+<div class="col-12">
+    {{ form.recipe_name.label }}
+    {{ form.recipe_name }}
+</div>
+    <!--Recipe description-->
+<div class="col-12">
+    {{ form.recipe_description.label }}
+    {{ form.recipe_description}}
+</div>
+<!--Prep Time-->
+<div class="col-12">
+    {{ form.prep_time.label }}
+    {{ form.prep_time}}
+</div>
+<!--Cook Time-->
+<div class="col-12">
+    {{ form.cooking_time.label }}
+    {{ form.cooking_time}}
+</div>
+<!-- Ingredients-->
+<div class="col-12">
+    {{ form.ingredients.label }}
+    {{ form.ingredients }}
+</div>
+<!-- Steps-->
+<div class="col-12">
+    {{ form.steps.label }}
+    {{ form.steps }}
+</div> 
+<!-- Image Recipe-->
+<div class="col s12">
+    {{ form.image.label }}
+    {{ form.image }}
+</div>
+</div>
+<div>{{ form.submit() }}</div>
+</div>
+</div>
+</form>
 
 {% endblock %}
