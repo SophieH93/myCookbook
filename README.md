@@ -200,10 +200,12 @@ and if the user's password do no match a alert appears to advise the user the pa
 ## **Login to Account:**
 
 * **Plan-** I will need to create a form for the user to login to their account. I will need to make sure the form is validated correctly.
-* **Implementation-**To check the information from the form matches the information that is stored in the users collections and if it does not match,
+
+* **Implementation-**To check the information from the form matches the information that is stored in the users collections in the database and if it does not match,
 a flash message is triggered to let the user know that their password/username is incorrect.
-* **Testing-**
-* **Result-**
+
+* **Testing-** I inputted the **wrong informaton** to make sure the **flash error** displays and then created the **correct** login **information** and a **flash messages** displayes to tell the user they have logged in successfully.
+* **Result-** The test passed and I was able to sign in the account.
 
 ## **Sign Out:**
 
