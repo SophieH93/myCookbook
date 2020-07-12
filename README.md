@@ -175,9 +175,13 @@ Due to the scope of the website, there will need to be a lot of testing required
 ## **Navbar/footer:**
 
 * **Plan-** I will need to ensure all the links work properly so when the user clicks on one they are brought to the correct page.
+
 * **Implementation-** Chcek that the nav links go to the correct page and the social media links open in a new tab to the correct website.
-* **Testing-** Manually test the app with **debugger**- debug=True
-* **Result-**
+
+* **Testing-** Use **session variables** and jinja **if/else** statements for the navigation so when the user logs in they are displayed with a different navbar.    
+  Use **target="_blank"** to open the **social** media links in a new tab.
+
+* **Result-**Social media links open in a new tab to the correct url. When the user logs into the site the **navbar** changes to display '**Recipes, Add Recipes, Logout."**
 
 ## **Create an account:**
 * **Plan**-I will need to implement a way that a user will be able to create an account and that their **information** is **stored** in a **database**.        
@@ -185,10 +189,12 @@ This invloves checking that the users **passwords match** when they create a pas
 I will need to **research** the best way to create this feature that's also easy for the user to create an account and properly hash the password when 
 it's stored into the database.
 
-* **Implementation-** Import session and bcrypt was required to handle the request. The code checks that the passwords entered match to avoid any typos and then checks if the username entered already exists in the database.
-* **Testing** - I created few accounts to check what values are passed and stored in the database and that the passwords match and used [bcrypt](https://pypi.org/project/bcrypt/) for password hashing.   
+* **Implementation-** **Import session and bcrypt** was required to handle the request. The code checks that the passwords entered match to avoid any typos and then checks if the username entered already exists in the database.
+
+* **Testing** - I created a few accounts to check what values are passed and stored in the database and that the passwords match and used [bcrypt](https://pypi.org/project/bcrypt/) for password hashing.   
 To achieve this I followed [pretty printed Youtube viedo](https://www.youtube.com/watch?v=vVx1737auSE) to create the Registration form.
-* **Result-** This tests passed and the user's username and passwords are stored in the MongoBD database. A flash message will appear if the username already exists
+
+* **Result-** This tests passed and the user's username and passwords are stored in the MongoBD database. A **flash message** will appear if the username already exists
 and if the user's password do no match a alert appears to advise the user the password do not match.
 
 ## **Login to Account:**
@@ -317,5 +323,7 @@ pip3 install -r requirements.txt
 
 # Credits
 [Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**
+https://www.youtube.com/watch?v=803Ei2Sq-Zs&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=7 
+
 # Disclaimer
 **This websit is for educational purposes only.**
