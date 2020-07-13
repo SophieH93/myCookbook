@@ -157,7 +157,6 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/
 
 
-
 ## Tools 
 * [GitHub](https://github.com/)
 * [GitPod](https://www.gitpod.io/)
@@ -221,8 +220,11 @@ a flash message is triggered to let the user know that their password/username i
 ## **Create Recipe:**
 
 * **Plan-** I will need to ensure **validation** is inputted on the forms, to make sure the recipe cannot be created unless all required fieds are complete. I will also need to ensure the recipe is added to the Mongo Database.
+
 * **Implementation-** I will use [flask-wtf forms](https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/) to create the Add recipe form which will also include validation and then create a new route to insert the recipe to the database.
+
 * **Testing-** If a field is not complete the user will not be able to submit their recipe and the field will be highlighted. The user is redirected to the 'Recipes' page when the form is complete. The recipe is inerted into the database successfully.
+
 * **Result-** Working properly. Recipe stored into the MongoDB under the 'recipes' collection.
 
 ## **Edit Page:**
@@ -235,9 +237,12 @@ a flash message is triggered to let the user know that their password/username i
 ## **My Recipes:**
 
 * **Plan-** I will need to ensure the user is able to view all recipes created when they click on the **My Recipes** nav link and to ensure the edit and delete buttons work too.
-* **Implementation-** I will need to **test** that the **search bar** works, the **fitler** by **category** works, that the **full recipe** displays when the user clicks on a recipe and that the **edit** and **delete buttons** work.
-* **Testing-**
-* **Result-**
+
+* **Implementation-** I will need to **test** that the **search bar** works, the **fitler** by **category** works, that the **full recipe** displays when the user clicks on a recipe and that the **edit** and **delete buttons** work and that the recipe info is pulled from the database and displayed to the website.
+
+* **Testing-** I creaded a **for/loop** in the Recipes html that fetched the recipe card and in the Recipes route added the mongo.db.find to fetch the user's recipes from the database and display then to the site.
+
+* **Result-** The user's recipes are displaying on the page correctly.
 
 ## **Delete Recipes:**
 
@@ -329,7 +334,6 @@ pip3 install -r requirements.txt
 
 # Credits
 [Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**
-https://www.youtube.com/watch?v=803Ei2Sq-Zs&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=7 
 [Corey Schafer](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the flaskwt form for crating a recipe and how to add insert to the database.
 
 # Disclaimer

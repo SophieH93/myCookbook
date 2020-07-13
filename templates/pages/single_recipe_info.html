@@ -1,0 +1,48 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<section class="contianer">
+<h1>{{ selected_recipe.recipe_name }}</h1>
+<p>{{ selected_recipe.description }}</p>
+<div class="row">
+<div class="col s12 m6">
+      <img
+        class="responsive-img z-depth-2"
+        src="{{ selected_recipe.image }}"
+        alt="Recipe Image"
+      />
+</div>
+<div class="col s12 m6">
+
+<div>
+<h6>Prep Time</h6>
+{{ selected_recipe.prep_time }}</div>
+<div>
+<h6>Cooking time</h6>
+{{ selected_recipe.cooking_time }}</div>
+<div>
+</div>
+<div class="row">
+<div class="col s12 m6">
+<h4>Ingredients: </h4>
+<ul>
+{% for ingredient in selected_recipe.ingredients %}
+<li>
+    {{ ingredient }}
+</li>
+{% endfor %}
+</ul>
+</div>
+<div class="col s12 m6">
+<h4>Directions: </h4>
+    <ol>
+    {% for steps in selected_recipe.steps %}
+    <li>
+        {{ steps }}
+    </li>
+    {% endfor %}
+    </ol>
+</div>
+</div>
+</section>
+{% endblock %} 
+
