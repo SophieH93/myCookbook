@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/index")
 def index():
-    
+
 
    return render_template('pages/index.html', recipes=recipes)
 
@@ -33,7 +33,14 @@ def index():
 @app.route('/recipes')
 def recipes():
     
-    return render_template('pages/recipes.html', recipe=mongo.db.recipes.find())
+    return render_template('pages/recipes.html', recipes=mongo.db.recipes.find())
+
+
+ # Single Recipe displayed
+@app.route('/single_recipe_info/<recipe_id>')
+def single_recipe_info(recipe_id):
+    selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("pages/single_recipe_info", recipe=selected_recipe)
 
 # Add Recipes
 @app.route('/add_recipe')   
