@@ -1,6 +1,9 @@
 {% extends 'layout/base.html' %}
 {% block content %}
+<h1>My recipes</h1>
 
 
-
+        {% for recipe in recipes %}
+        {% include "components/recipe_cards.html" %}
+        {% endfor %}
 {% endblock %}
