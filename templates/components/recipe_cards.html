@@ -1,5 +1,4 @@
 
-
 <div class="container">
 <div class="card mb-3">
   <h3 class="card-header">{{ recipe.recipe_name }}</h3>
@@ -20,8 +19,8 @@
   
  
   <div class="card-footer text-muted">
-        <a class="btn btn-primary btn-lg" href="{{ url_for('register') }}" role="button">Edit</a>
-        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Delete</a>      
+        <a class="btn btn-primary btn-lg" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Delete</a>      
   </div>
 </div>
 </div>
