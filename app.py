@@ -22,17 +22,22 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/index")
 def index():
+   return render_template('pages/index.html')
 
 
-   return render_template('pages/index.html', recipes=recipes)
 
-
+# Edit Recipe
+@app.route("/edit_recipe/<recipe_id>")
+def edit_recipe(recipe_id):
+    form = addRecipeForm()
+    selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template('pages/edit_recipe.html',  selected_recipe=selected_recipe, form=form)
 
 
 # My Recipes
 @app.route('/recipes')
-def recipes():
-    
+def recipes():    
+
     return render_template('pages/recipes.html', recipes=mongo.db.recipes.find())
 
 
@@ -78,16 +83,6 @@ def insert_recipe():
     return redirect(url_for('recipes'))
        
        
-
-
-
-
-
-
-
-
-
-
 @app.route("/login", methods=["GET", "POST"])
 def login():       
     if request.method == "POST":
