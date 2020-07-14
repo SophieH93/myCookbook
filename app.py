@@ -39,8 +39,11 @@ def recipes():
  # Single Recipe displayed
 @app.route('/single_recipe_info/<recipe_id>')
 def single_recipe_info(recipe_id):
+    '''
+    Displays info about a selected recipe.
+    '''
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("pages/single_recipe_info", recipe=selected_recipe)
+    return render_template("pages/single_recipe_info.html", selected_recipe=selected_recipe)
 
 # Add Recipes
 @app.route('/add_recipe')   
