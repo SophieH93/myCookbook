@@ -200,7 +200,7 @@ and if the user's password do no match a alert appears to advise the user the pa
 
 * **Plan-** I will need to create a form for the user to login to their account. I will need to make sure the form is validated correctly.
 
-* **Implementation-**To check the information from the form matches the information that is stored in the users collections in the database and if it does not match,
+* **Implementation-** To check the information from the form matches the information that is stored in the users collections in the database and if it does not match,
 a flash message is triggered to let the user know that their password/username is incorrect.
 
 * **Testing-** I inputted the **wrong informaton** to make sure the **flash error** displays and then created the **correct** login **information** and a **flash messages** displayes to tell the user they have logged in successfully.
@@ -227,12 +227,15 @@ a flash message is triggered to let the user know that their password/username i
 
 * **Result-** Working properly. Recipe stored into the MongoDB under the 'recipes' collection.
 
-## **Edit Page:**
+## **Single Recipe Page:**
 
-* **Plan-** I will need to ensure that when the **edit button** is clicked the user will be able to edit their recipe. I will also need to ensure that the informaiton is properly updated and stored in the database.
-* **Implementation-** This testing will be similar to the create recipe as in to make sure all validation is inputted.
-* **Testing-**
-* **Result-**
+* **Plan-** I will need to ensure that when the user selects one of their recipes that the correct recipe info is pulled fromt the database.
+
+* **Implementation-** I will need to create a new route that fetches the recipe from the MongoDB.
+
+* **Testing-** I created a few recipes and using **select_recipe** was able to pull the correct info from the database when clicked on a specific recipe.
+
+* **Result-** The selected recipe is displaying the proper info.
 
 ## **My Recipes:**
 
@@ -244,13 +247,25 @@ a flash message is triggered to let the user know that their password/username i
 
 * **Result-** The user's recipes are displaying on the page correctly.
 
+## **Edit Page:**
+
+* **Plan-** I will need to ensure that when the **edit button** is clicked the user will be able to edit their recipe. I will also need to ensure that the informaiton is properly updated and stored in the database.
+
+* **Implementation-** This testing will be similar to the create recipe as in to make sure all validation is inputted.
+* **Testing-**
+* **Result-**
+
+
 ## **Delete Recipes:**
 
 * **Plan-** I will need to create a [sweetalert](https://sweetalert2.github.io/) that asks the user to confirmm if they actually want to delete the recipe.   
 If the answer is **Yes** then I will need to ensure the recipe is delete from the database and a confirmation is displayed to the user.   
 if the answer is **No** I need to ensure the user is brought back to the recipe.
+
 * **Implementation-** Test theses fectures work and check the database to see if the recipe is removed.
+
 * **Testing-**
+
 * **Result-**
 
 
