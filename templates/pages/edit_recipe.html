@@ -1,48 +1,59 @@
 {% extends 'layout/base.html' %}
 {% block content %}
+<section class="container-fluid">
 <h1>Edit Recipe</h1>
  <form method="POST" action="">
     {{ form.hidden_tag() }}
 <div class="row">
 <!--Recipe Name-->
 <div class="col-12">
-    {{ form.recipe_name.label }}
-    {{ form.recipe_name }}
-</div>
+<input id="recipe_name" name="recipe_name" value="{{ selected_recipe.recipe_name }}"  required />
     <!--Recipe description-->
-<div class="col-12">
-    {{ form.recipe_description.label }}
-    {{ form.recipe_description}}
+<div class="form-group col-12">
+      <label for="exampleTextarea">Description </label>
+      <textarea class="form-control" id="exampleTextarea" rows="3">
+      {{ selected_recipe.description }}
+      </textarea>
 </div>
 <!--Prep Time-->
-<div class="col-12">
-    {{ form.prep_time.label }}
-    {{ form.prep_time}}
-</div>
+<div class="form-group col-md-4">
+    <label for="prep_time">Prep Time</label>
+    <input name="prep_time" type="number" class="form-control" id="prep_time"  value="{{ selected_recipe.prep_time }}">
+</div>   
 <!--Cook Time-->
-<div class="col-12">
-    {{ form.cooking_time.label }}
-    {{ form.cooking_time}}
+<div class="form-group col-md-4">
+    <label for="cook_time">Cook Time</label>
+    <input name="cook_time" type="number" class="form-control" id="cook_time" value="{{ selected_recipe.cooking_time }}">
 </div>
+</div>
+
 <!-- Ingredients-->
-<div class="col-12">
-    {{ form.ingredients.label }} 
-    {{ form.ingredients }}
+<div class="form-group col-12">
+    <label for="exampleTextarea">Ingredients </label>
+    <textarea class="form-control" id="ingredients" rows="3">
+    {{ selected_recipe.ingredients }}
+    </textarea>
 </div>
 <!-- Steps-->
-<div class="col-12">
-    {{ form.steps.label }}
-    {{ form.steps }}
-</div> 
-<!-- Image Recipe-->
-<div class="col s12">
-    {{ form.image.label }}
-    {{ form.image }}
+<div class="form-group col-12">
+    <label for="steps">Steps </label>
+    <textarea class="form-control" id="ingredients" rows="3">
+    {{ selected_recipe.steps }}
+    </textarea>
+</div>
+<!-- Image-->
+<div class="form-group col s12">
+    <label for="recipe_image_url">Recipe Image</label>
+    <input name="recipe_image" type="text" class="form-control" id="recipe_image" value="{{ selected_recipe.image }}">
 </div>
 </div>
-<div>{{ form.submit() }}</div>
-</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a class="btn btn-primary" href="{{ url_for('recipes') }}">Cancel</a>       
+    </div>
 </div>
 </form>
-
+</section>
 {% endblock %}
