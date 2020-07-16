@@ -258,15 +258,13 @@ a flash message is triggered to let the user know that their password/username i
 
 ## **Delete Recipes:**
 
-* **Plan-** I will need to create a [sweetalert](https://sweetalert2.github.io/) that asks the user to confirmm if they actually want to delete the recipe.   
-If the answer is **Yes** then I will need to ensure the recipe is delete from the database and a confirmation is displayed to the user.   
-if the answer is **No** I need to ensure the user is brought back to the recipe.
+* **Plan-** I will need to create a delete button so the user is able to delete their recipe.
 
-* **Implementation-** Test theses fectures work and check the database to see if the recipe is removed.
+* **Implementation-** Test theses features work and check the database to see if the recipe is removed.
 
-* **Testing-**
+* **Testing-** I created the method to delete the recipe from the website and from the database.
 
-* **Result-**
+* **Result-** The selected Recipe is deleted when the **delete button** is clicked on and also removed from the MongoDB.
 
 
 # Bugs
@@ -348,8 +346,8 @@ pip3 install -r requirements.txt
 # Closing Notes
 
 # Credits
-[Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**
-[Corey Schafer](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the flaskwt form for crating a recipe and how to add insert to the database.
+[Pretty Printed Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**.   
+[Corey Schafer Youtbe](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the **FlaskWtForm** for **creating** a recipe and how to add **insert** to the database.
 
 # Disclaimer
 **This websit is for educational purposes only.**
