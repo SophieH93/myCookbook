@@ -2,7 +2,7 @@
 {% block content %}
 <section class="container-fluid">
 <h1>Edit Recipe</h1>
- <form method="POST" action="">
+ <form method="POST" action="{{ url_for('update_recipe', recipe_id=selected_recipe._id) }}">
     {{ form.hidden_tag() }}
 <div class="row">
 <!--Recipe Name-->
