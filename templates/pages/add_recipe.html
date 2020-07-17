@@ -33,6 +33,15 @@
         <label for="cook_time">Cook Time:</label> 
         {{ form.cooking_time(id="cooking_time", class="form-control") }}
     </div>
+
+    <!--Category-->
+    <div class="form-group col-md-4">
+        <i class="fas fa-utensils"></i>
+        <label for="category">Meal Type:</label> 
+        {{ form.category(id="category", class="form-control", placeholder="e.g Breakfast") }}
+    </div>
+
+
     
     <!-- Ingredients-->
     <div class="form-group col-md-12">

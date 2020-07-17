@@ -36,6 +36,15 @@
         <input type="number" class="form-control" name="cooking_time" id="cooking_time" value="{{ selected_recipe.cooking_time }}">  
     </div>
     
+  <!--Category-->
+    <div class="form-group col-md-4">
+        <i class="fas fa-clock"></i> 
+        <label for="cook_time">Meal Type:</label> 
+         <input type="text" class="form-control" name="recipe_category" id="recipe_category" value="{{ selected_recipe.category }}" >  
+
+    </div>
+
+
     <!-- Ingredients-->
     <div class="form-group col-md-12">
         <i class="fas fa-list-alt"></i>        
