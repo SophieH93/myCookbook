@@ -1,9 +1,6 @@
-body {
-	text-align: center;	   
-}
-
 h1{
     padding: 2rem;
+    text-align: center;	  
 }
 
 .img-fluid {
@@ -14,7 +11,7 @@ max-width: 100%;
 
 /* Login */
 
-#login {
+#login, #register {
     max-width: 30rem;
     min-width: 250px;
     margin: auto;
@@ -30,10 +27,12 @@ form {
 label {
 	padding: 1rem;
 	font-size: 1.5rem;
-	font-weight: 300
+	font-weight: 300;
+    text-align: left;	  
 }
 
-.loginBtn {
+.loginBtn, .registerBtn {
 	font-size: 1.5rem;
 	margin-top: 3rem;
+    border-radius: 4rem;
 }
