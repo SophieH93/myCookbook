@@ -32,7 +32,7 @@
 
 # **UX**
 ## Project Goals:
-make it a pitch e.g my awsome website
+
 
 The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
 The users who wish to avail of the site will be able to create their own **online Cookbook**, 
@@ -40,17 +40,15 @@ allowing them to **create**/upload recepies, **read** through their existing rec
 stored on the site, **update** their recipes and to **delete** recipes.
 
 ## User Stories
-As a user I would want/expect my Personal Cookbook:   CHANGE TO AS A USER FOR EACH POINT
-* For my **site** to be **secure**.
-* To be able to **create** my own recipes.
-* To **view** all my recipes easily.
-* **Edit** recipes.
-* **Update** my recepies.
-* **Deleted** recipes I no longer want.
-* Filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
-* For the website to be **responsive** on different devices.
-* Be able to **delete** or **change** my **username/password/account** if I please.
-* to view **sample recipes** layout.
+
+* As a user, I would expect the website **site** to be **secure**.
+* As a user, I would like be able to **create** my own recipes.
+* As a user, I would like be able to  **view** all my recipes easily.
+* As a user, I would like be able to **Edit** recipes.
+* As a user, I would like be able to **Deleted** recipes I no longer want.
+* As a user, I would like be able to be able to filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
+* As a user, I would expect the website to be **responsive** on different devices.
+* As a user, I would expect to able to **delete** or **change** my **username/password/account** if I please.
 
 ## User Goals
 *what u want the user to achieve
