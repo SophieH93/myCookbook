@@ -9,8 +9,31 @@ max-width: 100%;
     
 }
 
-/* Login */
+/* Nav */
+.navbar {
+	font-size: 2rem;
+	letter-spacing: 1px;
+    padding-right: 2rem;
+}
 
+.navbar-brand {
+	font-size: 2.3rem;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.nav-link {
+	color: white!important;
+}
+
+.nav-link:hover {
+	color: yellow!important;
+}
+
+
+
+
+/* Login */
 #login, #register {
     max-width: 30rem;
     min-width: 250px;
