@@ -43,11 +43,12 @@ def update_recipe(recipe_id):
 
     if request.method == "POST":
         recipes.update({"_id": ObjectId(recipe_id)}, {
-        "recipe_name": request.form.get("recipe_name"),
+            "recipe_name": request.form.get("recipe_name"),
             "description": request.form.get("recipe_description"),
             "prep_time": request.form.get("prep_time"),
             "cooking_time": request.form.get("cooking_time"),
-            "ingredients": request.form.get('recipe_ingredients'),
+            "category": request.form.get("category"),
+            "ingredients": request.form.get('ingredients'),
             "steps": request.form.get('steps'),
             "image": request.form.get("image")
         })
@@ -95,7 +96,8 @@ def insert_recipe():
         "description": request.form.get("recipe_description"),
         "prep_time": request.form.get("prep_time"),
         "cooking_time": request.form.get("cooking_time"),
-        "ingredients": request.form.get('recipe_ingredients'),
+        "category": request.form.get("category"),
+        "ingredients": request.form.get('ingredients'),
         "steps": request.form.get('steps'),
         "image": request.form.get("image")
     })
