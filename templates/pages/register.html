@@ -1,51 +1,42 @@
 {% extends 'layout/base.html' %} {% block content %}
-    
-    
-    <div class="container">
+
+<section class="container" id="register">
     <div class="row">
-      <div class="col-lg-10 col-xl-9 mx-auto">
-        <div class="card card-signin flex-row my-5">
-          <div class="card-img-left d-none d-md-flex">
-             <!-- Background image for card set in CSS! -->
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Create Your Account</h5>
-
-            <form method="POST" class="form-signin">
-              <div class="form-label-group">
-                <input type="text" name="username" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                
-              </div>           
-              <hr>
-
-              <div class="form-label-group">
-                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-              
-              </div> <br>
-              
-              <div class="form-label-group">
+      <div class="col">        
+        <h1>Create Your Account</h1>
+            <form method="POST" >
+              <div class="form-group">
+                <i class="fas fa-user"></i> <label for="username">Username:</label>
+                <input type="text" name="username" id="inputUserame" class="form-control" placeholder="Enter username" required autofocus>                
+              </div>                   
+              <div class="form-group">
+                <i class="fas fa-lock"></i> <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>              
+              </div>               
+              <div class="form-group">
+              <i class="fas fa-lock"></i> <label for="password">Confirm Password:</label>
                 <input type="password" name="confirm_password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
-                </div><br>
-
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button> <br>
+                </div>
+              <button class="btn registerBtn btn-primary btn-block" type="submit">Register</button> <br>
               
                 <p>Already registered?  <a href="{{url_for('login')}}">Sign In</a></p>
-              <hr class="my-4">
+           
+
+
               {% with messages = get_flashed_messages() %}
                 {% if messages %}
                 {% for message in messages %}
                 <div class="flash">
                     <p>{{ message }}</p>
                 </div>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+    
+</section>
  
 {% endblock %}
 
