@@ -163,6 +163,13 @@ Contains **links** to the developers relevent social media links **Github & Link
 
 
 ## Future Features:
+* **Pagination-** So only a few recipes will show on on the page and the remainder on the next page etc. At the moment all Recipes are displayed on the same page.
+* **Change Password/Username-** To allow the user to change their details if they wish.
+* **Recover Password-** If the user have forgotton their password will be able to re-set it.
+* **Filter Recipes-** To make it easier to find a certain recipe.
+* **Search Option-** Search a recipe by name.
+
+
 
 # Information Architecture
 
