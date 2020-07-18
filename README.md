@@ -51,7 +51,7 @@ stored on the site, **update** their recipes and to **delete** recipes.
 * As a user, I would expect to able to **delete** or **change** my **username/password/account** if I please.
 
 ## User Goals
-*what u want the user to achieve
+
 * Include different **categories** when searching for a recipe e.g breakfast.
 * Website to **protect** the **users information**.
 * Website to be easy to use and **visually** **appealing**.
@@ -147,18 +147,25 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://www.javascript.com/)
 * [Python](https://www.python.org/)
-* [JSON]
+* [JSON](https://www.json.org/json-en.html)
 
 ## Frameworks
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)* 
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Bootswatch](https://bootswatch.com/)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* [JQuery](https://jquery.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/start)
 
 
 ## Tools 
 * [GitHub](https://github.com/)
 * [GitPod](https://www.gitpod.io/)
 * [Git](https://git-scm.com/about)
+* [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+* [Flask-Bcrypt](https://flask-bcrypt.readthedocs.io/en/latest/)
+* [Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/install.html)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 * [W3C Markup Validation](https://validator.w3.org/)
 * [WSC CSS Validaion](https://jigsaw.w3.org/css-validator/)
