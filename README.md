@@ -314,6 +314,10 @@ a flash message is triggered to let the user know that their password/username i
 
 
 # Bugs
+* **Bug:** I wanted to create **two cards** side-by side on the **Single Recipe Page* with the second card displaying the Ingredients and Steps in list format. 
+* **Fix:** Unfortunately due to time restrictions I was unable to solve this bug so I amended the page to display just one card with the recipe details and styled
+the page with *max-width & auto margin* to center the recipe on the page.
+
 
 # Deployment 
 ## **Run Locally:**
