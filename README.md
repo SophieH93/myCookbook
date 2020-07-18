@@ -138,10 +138,25 @@ Contains a form where the user enters a **Username, Password and Confirm Passwor
 Contains a form for the user to enter their **Psername & Password** allowing them to log into their account, providing their details are corrent.   
 If the details match the ones in the database, the user is redirected to the home pages and informed with a **flash message** that they have successfully logged in.
 
-* **Logout:**
+* **My Recipes:**  
+Allows the user to view all their recipes in a card formatat. The card will displays the **recipe image, meal type, cooking time** and two **buttons, edit & delete**.
+
+* **Single Recipe Page:**   
+Renders when the user clicks on the recipe card.  This page will display informaiton about the selected recipe.
+
+* **Add Recipes Page:**  
+The user is able to add their recipe through a form which is validated. When the user has added their recipe to the database they are redirected to the **Recipe page**.
+
+* **Edit Recipes Page:**  
+The user is able to update information about a recipe. The form layout is the same as the *add recipe page**.   
+The page also contains two **buttons**, **edit** and **cancel**.
+
+* **Delete Recipes:**
+Once the user clicks the delete button, which is displayed on the recipes page in the card, the recipe will be **deleted from the database** and the user will 
+be **redirected** to the *recipes page*
+
+* **Logout:**   
 Clicking the logout button will end the user's session and redirect them back to the home page.
-
-
 
 * **Footer:**   
 Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
