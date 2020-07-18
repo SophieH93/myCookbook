@@ -330,7 +330,7 @@ pip3 install -r requirements.txt
 
 5. From the dashboard, click **Deploy -> Deployment method -> GitHub**
 
-6. To start the web process, put the following command into the terminal to scale dynos:
+6. To start the web process, put the following command into the terminal to **scale dynos**:
     ```
     heroku ps:scale web=1
     ```
