@@ -322,26 +322,36 @@ pip3 install -r requirements.txt
     ```
 2. Create a **Procfile**, in order to tell Heroku how to run the project. Procfile must start with a capital 'P':
     ```
-    echo web: python run.py > Procfile
+    echo web: python app.py > Procfile
     ```
-3. Push these to your repository.
+3. Push these to your Git repository.
 
-4. Create a new app on Heroku, assin a unique name and set your region (I used Europe)
+4. Create a new app on Heroku, assign a unique name and set your region (I used Europe)
 
-5. Fomr the dashboard, click **Deploy -> Deployment method -> GitHub**
-    help them sign into git
+5. From the dashboard, click **Deploy -> Deployment method -> GitHub**
 
-6. BE MORE EXPLICIT Link Heroku to your IDE by inputting the following into your command:
+6. To start the web process, put the following command into the terminal to scale dynos:
     ```
-    heroku login
-    git push heroku master
+    heroku ps:scale web=1
+    ```
+   
+7. Link Heroku to your IDE by inputting the following into your command:
+    ```
+    heroku login (will ask you to login)
+    add your heroku url to git **git remote add heroku url. Url can be sound in **settings -> App Information -> Heroku git URL**
+    git push -u heroku master
     ```
 
-7. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
+8. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
     * IP: 0.0.0.0
     * PORT: 5000
+    * MONGO_URI: *link to your MongoDB database*
+    * SECRET_KEY: *your secret key* 
+    * DEBUG: FALSE   
+**Note-** your MONGO_URI and SECRET_KEY must match the ones you entered in .env.py file
 
-8. Click **Open App** to view the app.
+
+9. Click **Open App** to view the app.
     
 # Closing Notes
 
