@@ -125,7 +125,26 @@ The **edit recipe page**  will be the same as the **add recipe page** hence I di
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
 
 # Features
+* **Navbar:**   
+If the user is **not logged in** the navbar contains a **Register & Login** links.   
+If the user is **logged in** the navbar contains a **Recipes, Add Recipes, Logout** links.
+**Python** will determine is the user is logged in to the site or not by checking **if session.username** and passes this data to **Jinja** to 
+display the correct navbar for the user.   
 
+* **Register Page:**   
+Contains a form where the user enters a **Username, Password and Confirm Password** field. The Passwords must match and are **hashed** for security purposes.    
+
+* **Login Page:**   
+Contains a form for the user to enter their **Psername & Password** allowing them to log into their account, providing their details are corrent.   
+If the details match the ones in the database, the user is redirected to the home pages and informed with a **flash message** that they have successfully logged in.
+
+* **Logout:**
+Clicking the logout button will end the user's session and redirect them back to the home page.
+
+
+
+* **Footer:**   
+Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
 
 
 ## Future Features:
