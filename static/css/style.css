@@ -78,3 +78,10 @@ label {
     padding: 0.3rem;
 }
 
+#singleRecipe {
+	max-width: 40rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;	
+   
+}
