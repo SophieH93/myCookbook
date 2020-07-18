@@ -32,7 +32,7 @@
 
 # **UX**
 ## Project Goals:
-make it a pitch e.g my awsome website
+
 
 The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
 The users who wish to avail of the site will be able to create their own **online Cookbook**, 
@@ -40,20 +40,18 @@ allowing them to **create**/upload recepies, **read** through their existing rec
 stored on the site, **update** their recipes and to **delete** recipes.
 
 ## User Stories
-As a user I would want/expect my Personal Cookbook:   CHANGE TO AS A USER FOR EACH POINT
-* For my **site** to be **secure**.
-* To be able to **create** my own recipes.
-* To **view** all my recipes easily.
-* **Edit** recipes.
-* **Update** my recepies.
-* **Deleted** recipes I no longer want.
-* Filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
-* For the website to be **responsive** on different devices.
-* Be able to **delete** or **change** my **username/password/account** if I please.
-* to view **sample recipes** layout.
+
+* As a user, I would expect the website **site** to be **secure**.
+* As a user, I would like be able to **create** my own recipes.
+* As a user, I would like be able to  **view** all my recipes easily.
+* As a user, I would like be able to **Edit** recipes.
+* As a user, I would like be able to **Deleted** recipes I no longer want.
+* As a user, I would like be able to be able to filter recipes into **categories** e.g breakfast, lunch and dinner to make it easier to view.
+* As a user, I would expect the website to be **responsive** on different devices.
+* As a user, I would expect to able to **delete** or **change** my **username/password/account** if I please.
 
 ## User Goals
-*what u want the user to achieve
+
 * Include different **categories** when searching for a recipe e.g breakfast.
 * Website to **protect** the **users information**.
 * Website to be easy to use and **visually** **appealing**.
@@ -127,7 +125,41 @@ The **edit recipe page**  will be the same as the **add recipe page** hence I di
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
 
 # Features
+* **Navbar:**   
+If the user is **not logged in** the navbar contains a **Register & Login** links.   
+If the user is **logged in** the navbar contains a **Recipes, Add Recipes, Logout** links.
+**Python** will determine is the user is logged in to the site or not by checking **if session.username** and passes this data to **Jinja** to 
+display the correct navbar for the user.   
 
+* **Register Page:**   
+Contains a form where the user enters a **Username, Password and Confirm Password** field. The Passwords must match and are **hashed** for security purposes.    
+
+* **Login Page:**   
+Contains a form for the user to enter their **Psername & Password** allowing them to log into their account, providing their details are corrent.   
+If the details match the ones in the database, the user is redirected to the home pages and informed with a **flash message** that they have successfully logged in.
+
+* **My Recipes:**  
+Allows the user to view all their recipes in a card formatat. The card will displays the **recipe image, meal type, cooking time** and two **buttons, edit & delete**.
+
+* **Single Recipe Page:**   
+Renders when the user clicks on the recipe card.  This page will display informaiton about the selected recipe.
+
+* **Add Recipes Page:**  
+The user is able to add their recipe through a form which is validated. When the user has added their recipe to the database they are redirected to the **Recipe page**.
+
+* **Edit Recipes Page:**  
+The user is able to update information about a recipe. The form layout is the same as the *add recipe page**.   
+The page also contains two **buttons**, **edit** and **cancel**.
+
+* **Delete Recipes:**
+Once the user clicks the delete button, which is displayed on the recipes page in the card, the recipe will be **deleted from the database** and the user will 
+be **redirected** to the *recipes page*
+
+* **Logout:**   
+Clicking the logout button will end the user's session and redirect them back to the home page.
+
+* **Footer:**   
+Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
 
 
 ## Future Features:
@@ -149,18 +181,25 @@ The **delete recipie** will display a pop up to confirm with the user if they ac
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://www.javascript.com/)
 * [Python](https://www.python.org/)
-* [JSON]
+* [JSON](https://www.json.org/json-en.html)
 
 ## Frameworks
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)* 
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Bootswatch](https://bootswatch.com/)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* [JQuery](https://jquery.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/start)
 
 
 ## Tools 
 * [GitHub](https://github.com/)
 * [GitPod](https://www.gitpod.io/)
 * [Git](https://git-scm.com/about)
+* [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+* [Flask-Bcrypt](https://flask-bcrypt.readthedocs.io/en/latest/)
+* [Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/install.html)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 * [W3C Markup Validation](https://validator.w3.org/)
 * [WSC CSS Validaion](https://jigsaw.w3.org/css-validator/)
@@ -322,26 +361,36 @@ pip3 install -r requirements.txt
     ```
 2. Create a **Procfile**, in order to tell Heroku how to run the project. Procfile must start with a capital 'P':
     ```
-    echo web: python run.py > Procfile
+    echo web: python app.py > Procfile
     ```
-3. Push these to your repository.
+3. Push these to your Git repository.
 
-4. Create a new app on Heroku, assin a unique name and set your region (I used Europe)
+4. Create a new app on Heroku, assign a unique name and set your region (I used Europe)
 
-5. Fomr the dashboard, click **Deploy -> Deployment method -> GitHub**
-    help them sign into git
+5. From the dashboard, click **Deploy -> Deployment method -> GitHub**
 
-6. BE MORE EXPLICIT Link Heroku to your IDE by inputting the following into your command:
+6. To start the web process, put the following command into the terminal to **scale dynos**:
     ```
-    heroku login
-    git push heroku master
+    heroku ps:scale web=1
+    ```
+   
+7. Link Heroku to your IDE by inputting the following into your command:
+    ```
+    heroku login (will ask you to login)
+    add your heroku url to git **git remote add heroku url. Url can be sound in **settings -> App Information -> Heroku git URL**
+    git push -u heroku master
     ```
 
-7. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
+8. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
     * IP: 0.0.0.0
     * PORT: 5000
+    * MONGO_URI: *link to your MongoDB database*
+    * SECRET_KEY: *your secret key* 
+    * DEBUG: FALSE   
+**Note-** your MONGO_URI and SECRET_KEY must match the ones you entered in .env.py file
 
-8. Click **Open App** to view the app.
+
+9. Click **Open App** to view the app.
     
 # Closing Notes
 
