@@ -1,39 +1,41 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
-    <section class="contianer-fluid">
-    <h1>{{ selected_recipe.recipe_name }}</h1>
-    <p>{{ selected_recipe.description }}</p>
+<section class="contianer" id="singleRecipe">
     <div class="row">
-    <div class="col-md-12">
-        <img style="height: 200px"
-            class="responsive-img z-depth-2"
-            src="{{ selected_recipe.image }}"
-            alt="Recipe Image"
-        />
-    </div>
-     <!--Prep time-->
-    <div class="col-md-6">    
-        <h6>Prep Time:  {{ selected_recipe.prep_time }} minus</h6>
-    </div>
-
-    <!--Cook time-->
+        <div class="col-md-12">
+            <h1 >{{ selected_recipe.recipe_name }}</h1>
+        </div>                   
+            <div class="col-md-6">
+          <div class="card "> 
+               <div class="card-body">
+                <h2 class="card-description">{{ selected_recipe.description }}</h2>               
+            </div>
+                <img style="recipe-image responsive-img" src="{{ selected_recipe.image }}" alt="Card image">
+            
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong> Prep Time: </strong> {{ selected_recipe.prep_time }} mins</li>
+                <li class="list-group-item"><strong> Cook Time: </strong> {{ selected_recipe.cooking_time }} minu</li>
+                <li class="list-group-item"><strong> Meal Type: </strong> {{ selected_recipe.category }}</li>
+            </ul>          
+            </div>
+        </div>
+          
+            
     <div class="col-md-6">
-        <h6>Cooking time: {{ selected_recipe.cooking_time }} mins </h6>
-    </div>
-    
-    <!--Ingredients-->
-    <div class="col-md-6">
-        <h6>Ingredients: </h6>
-            {{ selected_recipe.ingredients }}
-    </div>
+       <div class="card">     
+          <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-utensils"></i>
+                <strong> Ingredients:  </strong>  <br> {{ selected_recipe.ingredients }}</li>
 
-    <!--Steps-->
-    <div class="col-md-6">
-        <h6>Steps: </h6>
-            {{ selected_recipe.steps }}
+                <li class="list-group-item"><i class="fas fa-clipboard-list"></i>
+                <strong> Steps: </strong> <br>{{ selected_recipe.steps }} minu</li>
+                
+            </ul>          
+            </div>
+        </div>
     </div>
-
 </section>
-{% endblock %} 
 
+
+{% endblock %} 
