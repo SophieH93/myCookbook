@@ -62,7 +62,7 @@ As a user I would want/expect my Personal Cookbook:   CHANGE TO AS A USER FOR EA
 
 # **Design Choice**
 
- **Typography**:
+ **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
 
  **Colours**: 
 
