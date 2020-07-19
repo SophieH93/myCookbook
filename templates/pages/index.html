@@ -10,25 +10,23 @@
     {% endfor %}
     {% endif %}
 {% endwith %}
-
- <div class="jumbotron">
-    <h1 class="display-3">My Cookbook!</h1>
-    <p class="lead">Tired of having to look up recipes on the internet or in a Cookbook? <br>
-    Sign up now to create your own personalise online Cookbook!</p>
-    <hr class="my-4">
-    <p>My Cookbook allows you to add your own recipes and store them into different categories. Great way to easily view all your favourite 
-    recipes in one place!</p>
-    <p class="lead">
-        {% if session.username %} 
-        <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
-        {% else %}
-        <a class="btn btn-primary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
-        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Signin</a>      
-        {% endif %}
-    </p>
-</div>
-
-<div class="container">
+<section class="container-fluid">
+    <div class="row">
+    <div class="jumbotron col">
+        <h1 class="display-3">My Cookbook!</h1>            
+            <h2>Store all your favourite recipes in one place! </h2> 
+            <q class="quote">A recipe has no soul. You, as the cook, must bring sould to the recipe</q>    
+            <p class="homeBtn">
+                {% if session.username %} 
+                <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
+                {% else %}
+                <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+                <a class="btn btn-success btn-lg" href="{{ url_for('login') }}" role="button">Signin</a>      
+                {% endif %}
+            </p>
+    </div>
+    </div>
+<!--<div class="container">
     <div class="row">  
     <div class="col-md-3 col-sm-6">
         <div class="card border-primary mb-3">
@@ -63,8 +61,8 @@
         </div>
     </div>
     </div>
-</div>
-
+</div>-->
+</section>
 
 {% endblock %}
 
