@@ -62,7 +62,10 @@ stored on the site, **update** their recipes and to **delete** recipes.
 
  **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
 
- **Colours**: 
+ **Colours**: I decieded to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.   
+ * Primary Colour - Fire Opal: #EB6864 
+
+  **Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms.
 
 # **Structure**
 The Website will consist of serveral pages.   
@@ -172,13 +175,37 @@ Contains **links** to the developers relevent social media links **Github & Link
 
 
 # Information Architecture
+Using NoSql features in MongoDB I was able to map out the following colelctions.
 
 ## Data Storage Types
 * ObjectID
- * String
- * Boolean
- * Array
- 
+* String
+* Boolean
+* Array
+* Object
+* Binary
+
+**Users Collection:**
+````
+_id: <ObjectId>
+name:<string>
+password: Binary(string)
+````
+
+
+**Recipe Collection:**
+````
+_id: <ObjectId>
+recipe_name: <string>
+description: <string>
+prep_time: <string>
+cooking_time: <string>
+ingredients: <string>
+steps: <string>
+ingredients: <string>
+images: <string>
+````
+
 
 
 # Technologies used
