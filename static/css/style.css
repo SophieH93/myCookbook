@@ -10,9 +10,9 @@ h1 {
     text-align: center;	  
     text-shadow: 0 0 2px #fd7e14;
 }
-h2 {
-   font-family: 'Lora', serif; 
-   font-size: 1.6rem;
+
+h2, h3 {
+   font-family: 'Lora', serif;    
    margin-bottom: 3rem;
 }
 
@@ -60,7 +60,7 @@ h2 {
 }
 
 .index {
-     margin-top: 15rem;
+    margin-top: 15rem;
 }
 
 .quote {
