@@ -10,6 +10,12 @@ h1{
     text-align: center;	  
     text-shadow: 0 0 2px #fd7e14;
 }
+h2 {
+   font-family: 'Lora', serif; 
+   font-size: 1.6rem;
+   margin-bottom: 3rem;
+}
+
 
 .img-fluid {
     width: 100%;
@@ -40,6 +46,22 @@ h1{
 	color: yellow!important;
 }
 
+
+.jumbotron {
+    background-image:  url(../images/cook2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    text-align:center;
+}
+
+.quote {
+    font-size: 1.2rem;
+
+}
+
+.homeBtn {
+	margin-top: 3rem;
+}
 
 
 
