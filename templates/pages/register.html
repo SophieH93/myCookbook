@@ -1,9 +1,9 @@
 {% extends 'layout/base.html' %} {% block content %}
-<section class="container" id="register">
+<section class="container-fluid" id="register">
 	<div class="row">
 		<div class="col">
 			<h1>Create Your Account</h1>
-			<form method="post">
+			<form method="POST" class="form-register">
 				<div class="form-group">
 					<i class="fas fa-user"></i><label for="username">Username:</label>
 					<input autofocus="" class="form-control" id="inputUserame" name="username" placeholder="Enter username" required="" type="text">
