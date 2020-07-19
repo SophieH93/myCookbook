@@ -10,12 +10,12 @@
     {% endfor %}
     {% endif %}
 {% endwith %}
-<section class="container-fluid">
+<section class="container-fluid hero-image">    
     <div class="row">
-    <div class="jumbotron col">
-        <h1 class="display-3">My Cookbook!</h1>            
+     <div class="col index">
+        <h1 id="title">My Cookbook!</h1>            
             <h2>Store all your favourite recipes in one place! </h2> 
-            <q class="quote">A recipe has no soul. You, as the cook, must bring sould to the recipe</q>    
+            <q class="quote">A recipe has no soul. You, as the cook, must bring soul to the recipe</q>    
             <p class="homeBtn">
                 {% if session.username %} 
                 <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
@@ -26,42 +26,8 @@
             </p>
     </div>
     </div>
-<!--<div class="container">
-    <div class="row">  
-    <div class="col-md-3 col-sm-6">
-        <div class="card border-primary mb-3">
-            <div class="card-header">ADD YOUR RECIPES</div>        
-            <div class="card-body">            
-                <p class="card-text">Add your own recipes</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-        <div class="card border-primary mb-3">
-            <div class="card-header">VIEW RECIPES</div>
-            <div class="card-body">
-                <p class="card-text">Read all your recipes and filter them by categories e.g dinner</p>
-            </div>
-        </div>
-    </div>  
-    <div class="col-md-3 col-sm-6">
-        <div class="card border-primary mb-3">
-            <div class="card-header">EDIT YOUR RECIPES</div>
-            <div class="card-body">
-                <p class="card-text">Update your recipes easily</p>
-             </div>
-        </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-        <div class="card border-primary mb-4">
-            <div class="card-header">DELETE YOUR RECIPES</div>
-            <div class="card-body">
-                <p class="card-text">Simply delete the recipes you no longer want</p>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>-->
+  
+   
 </section>
 
 {% endblock %}
