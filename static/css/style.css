@@ -63,7 +63,7 @@ h2 {
 	margin-top: 3rem;
 }
 
-.form-signin {
+.form-signin, .form-register {
     max-width: 30rem;
     min-width: 250px;
     margin: auto;
@@ -71,7 +71,8 @@ h2 {
 }
 
 /* Login */
-#login {
+
+#login, #register {
    background-image:radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
