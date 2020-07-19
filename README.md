@@ -408,6 +408,7 @@ pip3 install -r requirements.txt
 # Credits
 [Pretty Printed Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**.   
 [Corey Schafer Youtbe](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the **FlaskWtForm** for **creating** a recipe and how to add **insert** to the database.
+[Unsplash](https://unsplash.com/collections/2136555/flatlay) Used for Jumbotron and Login page background images
 
 # Disclaimer
 **This websit is for educational purposes only.**
