@@ -8,6 +8,7 @@ h1{
     font-family: 'Lora', serif;
     padding: 2rem;
     text-align: center;	  
+    text-shadow: 0 0 2px #fd7e14;
 }
 
 .img-fluid {
@@ -84,4 +85,16 @@ label {
     margin-bottom: 3rem;
     text-align: center;	
    
+}
+
+
+.add-edit-form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    padding:2rem;
+    border-radius: 2rem;
+}
+
+.form-control{
+	 border: none;
+	  border-bottom: 2px solid #EB6864;
 }
