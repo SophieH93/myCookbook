@@ -39,8 +39,8 @@ def login():
             if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
                 session['username'] = request.form['username']      
                 flash('You have been successfully logged in!')
-                return redirect(url_for('index'))        
-        return 'Invalide username/password combination'
+                return redirect(url_for('index'))
+        flash('Invalide username/password !')        
     return render_template('pages/login.html')
 
 '''
@@ -60,11 +60,12 @@ def register():
         return 'That username already exists!'
     return render_template('pages/register.html')
 
+
 '''
 Recipe page
 '''
 @app.route('/recipes')
-def recipes():    
+def recipes():
 
     return render_template('pages/recipes.html', recipes=mongo.db.recipes.find())
 
