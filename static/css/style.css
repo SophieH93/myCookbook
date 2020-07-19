@@ -63,14 +63,19 @@ h2 {
 	margin-top: 3rem;
 }
 
-
-
-/* Login */
-#login, #register {
+.form-signin {
     max-width: 30rem;
     min-width: 250px;
     margin: auto;
     margin-top: 4rem;
+}
+
+/* Login */
+#login {
+   background-image:radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    text-align:center;
 }
 
 form {
@@ -92,6 +97,10 @@ label {
     border-radius: 4rem;
 }
 
+.registerLink {
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
+}
 
 .page-footer {
     text-align: center;
