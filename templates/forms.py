@@ -4,11 +4,9 @@ from wtforms.validators import DataRequired, Length, EqualTo
 
 
 class addRecipeForm(FlaskForm):
-    recipe_name = StringField('Recipe Name', 
-                                validators=[DataRequired()])
-    recipe_description = TextAreaField('Recipe Description',
-                                validators=[DataRequired(), Length(min=3, max=20)])    
-    prep_time = IntegerField('Prep Time (min)', validators=[DataRequired()])                                                
+    recipe_name = StringField('Recipe Name', validators=[DataRequired()])
+    recipe_description = TextAreaField('Recipe Description', validators=[DataRequired()])
+    prep_time = IntegerField('Prep Time (min)', validators=[DataRequired()])
     cooking_time = IntegerField('Cooking Time (min)', validators=[DataRequired()])
     category = TextAreaField('category',
                                 validators=[DataRequired()])
@@ -16,5 +14,5 @@ class addRecipeForm(FlaskForm):
                                 validators=[DataRequired()])
     steps = TextAreaField('Steps',
                                validators=[DataRequired()])
-    image = StringField('Recipe Image')                          
-    submit = SubmitField('Add Recipe')                    
+    image = StringField('Recipe Image')
+    submit = SubmitField('Add Recipe')
