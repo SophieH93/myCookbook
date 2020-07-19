@@ -38,7 +38,6 @@ def login():
         if login_user:
             if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
                 session['username'] = request.form['username']      
-                flash('You have been successfully logged in!')
                 return redirect(url_for('index'))
         flash('Invalide username/password !')        
     return render_template('pages/login.html')
@@ -51,13 +50,13 @@ def register():
     if request.method == "POST":
         users = mongo.db.users
         existing_user = users.find_one({'name': request.form['username']})
-        flash('You have been successfully Registered!')
+      #  flash('You have been successfully Registered!')
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert({'name' : request.form['username'], 'password' : hashpass})
-            session['username'] = request.form['username']            
+            session['username'] = request.form['username']
             return redirect(url_for('index'))
-        return 'That username already exists!'
+        flash('That username already exists!')
     return render_template('pages/register.html')
 
 
