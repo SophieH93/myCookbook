@@ -52,7 +52,6 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;   
     text-align:center;
-    min-height: 100vh;
 }
 
 #title {
@@ -60,12 +59,12 @@ h2, h3 {
 }
 
 .index {
-    margin-top: 15rem;
+     margin-top: 10rem;
+    margin-bottom: 8rem
 }
 
 .quote {
     font-size: 1.2rem;
-
 }
 
 .homeBtn {
@@ -146,5 +145,5 @@ label {
     font-size: 3rem;
     padding: 0.3rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+   
 }
