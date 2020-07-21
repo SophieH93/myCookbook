@@ -5,17 +5,22 @@
     * Project Goals   
     * User Stories
     * User Goals
-* Design Choices
-    * Fonts
-    * Colours
-    * Styling
-    * Images
-* Wireframes
-    * Website layout
-    * Flowchart
-* Features  
-    * Current Features
-    * Future features
+* Strategy
+* Scope
+* Structure
+* Surface       
+    * Design Choices
+        * Fonts
+        * Colours
+        * Styling
+        * Images
+    * Features  
+        * Current Features
+        * Future features
+* Skeleton
+    * Wireframes
+        * Website layout
+        * Flowchart
 * Information Architecture
 * Technologies Used
     * Languages
@@ -149,11 +154,11 @@ My Wireframes:
 [Tablet](https://github.com/SophieH93/MS3/tree/master/wireframes/tablet)  
 [Mobile](https://github.com/SophieH93/MS3/tree/master/wireframes/mobile)   
 [Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
+[Color Palette](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette)
 
 I created my wireframes and Flowchart using [MockFlow](https://www.mockflow.com/) for various devices.
 The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official wireframe for this page.   
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
-
 
 
 # Information Architecture
