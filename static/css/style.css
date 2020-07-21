@@ -52,6 +52,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;   
     text-align:center;
+    
 }
 
 #title {
@@ -67,7 +68,9 @@ h2, h3 {
     font-size: 1.2rem;
 }
 
-
+.btn {
+    margin-top: 3rem;
+}
 
 /* Login & Register page */
 
@@ -76,6 +79,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;   
     text-align:center;
+    height: 80vh;
 }
 
 .form-signin, .form-register {
