@@ -16,7 +16,7 @@
 					<i class="fas fa-lock"></i> <label for="password">Confirm Password:</label>
 					<input class="form-control" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" required="" type="password">
 				</div>
-				<button class="btn registerBtn btn-primary btn-block" type="submit">Register</button><br>
+				<button class="btn registerBtn btn-success btn-block" type="submit">Register</button><br>
 				<p>Already registered? <a href="{{url_for('login')}}">Sign In</a></p>
 				{% with messages = get_flashed_messages() %} 
 				{% if messages %}
