@@ -409,19 +409,13 @@ pip3 install -r requirements.txt
 
 4. Create a new app on Heroku, assign a unique name and set your region (I used Europe)
 
-5. From the dashboard, click **Deploy -> Deployment method -> GitHub**
-
-6. To start the web process, put the following command into the terminal to **scale dynos**:
+5. To start the web process, put the following command into the terminal to **scale dynos**:
     ```
     heroku ps:scale web=1
     ```
-   
-7. Link Heroku to your IDE by inputting the following into your command:
-    ```
-    heroku login (will ask you to login)
-    add your heroku url to git **git remote add heroku url. Url can be sound in **settings -> App Information -> Heroku git URL**
-    git push -u heroku master
-    ```
+6. From the Heroku dashboard, click **Deploy -> Deployment method -> GitHub**
+
+7. Connect to your Github repository by adding your **repo name** and clicking the **search button**.
 
 8. In the heroku dashboard for the application, click on **Settings -> Reveal Config Vars** and set the following config vars:   
     * IP: 0.0.0.0
@@ -431,8 +425,9 @@ pip3 install -r requirements.txt
     * DEBUG: FALSE   
 **Note-** your MONGO_URI and SECRET_KEY must match the ones you entered in .env.py file
 
+9. **Deploy -> Manual Deploy** select the master branch and click **deploy branch** button.
 
-9. Click **Open App** to view the app.
+10. Click **Open App** to view the app.
     
 # Closing Notes
 
