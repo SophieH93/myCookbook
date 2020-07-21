@@ -74,7 +74,7 @@ h2, h3 {
 /* Login & Register page */
 
 #login, #register {
-   background-image:radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
+    background-image:radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
     text-align:center;
@@ -97,7 +97,7 @@ form {
 	margin-top: 3rem;
     border-radius: 4rem;
 }
-.registerLink {
+.register-loginLink {
     margin-top: 3rem;
     margin-bottom: 3rem; 
 }
@@ -146,4 +146,26 @@ label {
     padding: 0.3rem;
     margin-top: 1rem;
    
+}
+
+/* Media Query for phones*/
+@media only screen and (max-width: 768px) {
+    .index {
+        margin-top: 0;
+        margin-bottom: 0;  
+}
+	#title {
+		font-size: 4rem
+	}
+
+    .form-signin, .form-register {      
+      margin-top: 0;
+}
+    .register-loginLink {
+    	font-size: 1.2rem;    
+}
+    .card {
+        margin-bottom: 1rem;
+    }
+
 }
