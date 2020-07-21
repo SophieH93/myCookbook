@@ -10,25 +10,23 @@
     {% endfor %}
     {% endif %}
 {% endwith %}
-<section class="container-fluid hero-image">    
+ <section class="container-fluid hero-image">
     <div class="row">
-     <div class="col index">
-        <h1 id="title">My Cookbook!</h1>            
-            <h2>Store all your favourite recipes in one place! </h2> 
-            <h3>Add, View, Edit and Delete your recipes.</h3> 
-            <q class="quote">A recipe has no soul. You, as the cook, must bring soul to the recipe</q>    
-            <p>
-                {% if session.username %} 
-                <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
-                {% else %}
-                <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
-                <a class="btn btn-success btn-lg" href="{{ url_for('login') }}" role="button">Login</a>      
-                {% endif %}
-            </p>
+      <div class="col index">
+        <h1 id="title">My Cookbook!</h1>
+        <h2>Store all your favourite recipes in one place!</h2>
+        <h3>Add, View, Edit and Delete your recipes.</h3>
+        <q class="quote">A recipe has no soul. You, as the cook, must bring soul to the recipe</q>
+        <p>
+        {% if session.username %}
+        <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a> 
+        {% else %} 
+        <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Register</a> 
+        <a class="btn btn-success btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+        {% endif %}</p>
+      </div>
     </div>
-    </div>
-   
-</section>
+  </section>
 
 {% endblock %}
 
