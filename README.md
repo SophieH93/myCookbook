@@ -62,72 +62,19 @@ stored on the site, **update** their recipes and to **delete** recipes.
 
  **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
 
- **Colours**: I decieded to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.   
- * Primary Colour - Fire Opal: #EB6864 
+ **Colours**: I decided to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.    
+ Click [here](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette) to view my **Color Palette**.
+ Main Color Palette:
+ * Fire Opal: #EB6864 
+ * Silver Chalice: #aaaaaa
+ * Cultured: #F8F9FA
+ * Heat Wave: #FD7E14
+ * Green Pantone: #22B24C 
 
-  **Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms.
+**Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms beside the labels..
 
 # **Structure**
-The Website will consist of serveral pages.   
-## **Home Page:**
-This is the main page of the website that will consist of some information
-about the function of website and **sample recipes** so the user can visualise what their recipes will look like.   
-The **navbar** which is fixed to the top of the page, will consits of a **logo, login and register** options.   
-The **footer** will contain some **social media** icons.
 
-## **Register Page:**
-The navbar will be the same as the home page along with the footer. 
-This page will contain a simple **form** to allow the user to register to the website.
-The **form** will contain a **username**, **password** and **confirm password** textareas to allow the user to get set up and a **submit** button.   
-
-## **Login Page:**
-Again, the navbar and footer will be the same and contain another **form** to allow the user to enter their **username** and **password** and a **login button**. 
-The form will have **validation** so if the user enters the wrong username or password an **alert** will pop up to advise the user that the information is inncorrect and to try again.
-
-## **User account home page:**
-When the user has logged into the website, the **navbar** will be amended to include a **logo, home, my recipies, my account dropdown**. 
-The **dropdown** option will contain **edit account, delete account, logout**.    
-The **edit account** will allow the user to amend their password.  
-The body of the page will contain the user name e.g *Sophie's Cookbook* and a small paragraph informing the user how the Cookbook works.   
-There is a **add recipe button** under the paragraph to allow the user to get started.
-
-## **Create/Edit Recipe:**
-The different **features** when the user creates a new recipie include the following:   
-* Add Category **breakfast, lunch, dinner, desert**
-* **Preperation** time.
-* **Cook** time.
-* Recipe **name**
-* Recipe **description**
-* **Ingredients**
-* **Steps**
-* **Image**
-* **Add/Cancel buttons**
-
-All these features apart from description will be **mandatory**.
-
-## **Recipes:**
-*My recipes* page consists of a **search** option and **filter** by meal type e.g dinner. 
-The current recipes created by the user will be displayed with the image of the recipe, name of the recipe and the meal type and cooking time.    
-The user will be able to click on their preferred recipe to view more information.
-
-## **Read Recipe:**
-This page consists of all the **imformation** selected **from** when the user **created their recipe**, the name of the recipe, image, cook/prep time, ingredients and steps.   
-There are two **buttons, edit and delete**.  
-The **edit** recipe **page** will be the same as the create recipe page and if the user wished to **delete** the recipe an alert message will appear to confirm if the user wants todelete this recipe.
-
-# **Wireframes**
-My Wireframes:  
-[Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
-)   
-[Tablet](https://github.com/SophieH93/MS3/tree/master/wireframes/tablet)  
-[Mobile](https://github.com/SophieH93/MS3/tree/master/wireframes/mobile)   
-[Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
-
-I created my wireframes and Flowchart using [MockFlow](https://www.mockflow.com/) for various devices.
-The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official wireframe for this page.   
-The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
-
-# Features
 * **Navbar:**   
 If the user is **not logged in** the navbar contains a **Register & Login** links.   
 If the user is **logged in** the navbar contains a **Recipes, Add Recipes, Logout** links.
@@ -164,6 +111,21 @@ Clicking the logout button will end the user's session and redirect them back to
 * **Footer:**   
 Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
 
+# **Wireframes**
+My Wireframes:  
+[Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
+)   
+[Tablet](https://github.com/SophieH93/MS3/tree/master/wireframes/tablet)  
+[Mobile](https://github.com/SophieH93/MS3/tree/master/wireframes/mobile)   
+[Flowchart](https://github.com/SophieH93/MS3/tree/master/wireframes/flowchart)
+
+I created my wireframes and Flowchart using [MockFlow](https://www.mockflow.com/) for various devices.
+The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official wireframe for this page.   
+The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
+
+## Features:
+* Bootswatch Journal Template
+* Startbootstrwap for login and register pages.
 
 ## Future Features:
 * **Pagination-** So only a few recipes will show on on the page and the remainder on the next page etc. At the moment all Recipes are displayed on the same page.
@@ -433,7 +395,7 @@ pip3 install -r requirements.txt
 
 # Credits
 [Pretty Printed Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**.   
-[Corey Schafer Youtbe](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the **FlaskWtForm** for **creating** a recipe and how to add **insert** to the database.
+[Corey Schafer Youtbe](https://www.youtube.com/watch?v=u0oDDZrDz9U&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=8) for creating the **FlaskWtForm** for **creating** a recipe and how to add **insert** to the database.   
 [Unsplash](https://unsplash.com/collections/2136555/flatlay) Used for Jumbotron and Login page background images
 
 # Disclaimer
