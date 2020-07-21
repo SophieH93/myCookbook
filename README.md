@@ -121,7 +121,12 @@ Contains **links** to the developers relevent social media links **Github & Link
  * Heat Wave: #FD7E14
  * Green Pantone: #22B24C 
 
+**Shadows**: **Radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04))** - Used for the login/register/add/edit background image.
+
 **Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms beside the labels..
+
+**Images:** The images chosen for the website were taking from [Unsplash](https://unsplash.com/collections/2136555/flatlay) under a 'cooking' search.
+
 
 ## Features:
 * [Bootswatch](https://bootswatch.com/journal/) Journal **Template**.
