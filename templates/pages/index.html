@@ -17,7 +17,7 @@
             <h2>Store all your favourite recipes in one place! </h2> 
             <h3>Add, View, Edit and Delete your recipes.</h3> 
             <q class="quote">A recipe has no soul. You, as the cook, must bring soul to the recipe</q>    
-            <p class="homeBtn">
+            <p>
                 {% if session.username %} 
                 <a class="btn btn-primary btn-lg" href="{{ url_for('add_recipe') }}" role="button">Add Recipe</a>
                 {% else %}
