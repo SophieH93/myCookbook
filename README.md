@@ -64,22 +64,10 @@ stored on the site, **update** their recipes and to **delete** recipes they no l
 
 **Primary Audience** - People who want to store their favourite recipes in one place online.
 
-
-# **Surface:**
-## **Design Choice**
-
- **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
-
- **Colours**: I decided to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.    
- Click [here](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette) to view my **Color Palette**.
- Main Color Palette:
- * Fire Opal: #EB6864 
- * Silver Chalice: #aaaaaa
- * Cultured: #F8F9FA
- * Heat Wave: #FD7E14
- * Green Pantone: #22B24C 
-
-**Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms beside the labels..
+# **Scope:**
+The website is easy to use and stores the user's information in [MongoDB](https://www.mongodb.com/). Due to time rectricions
+I was unable to create a search & category button which would have allowed the customer to look up a recipe or filter their recipes by
+different categories e.g breakfast, lunch etc.
 
 # **Structure**
 
@@ -119,6 +107,35 @@ Clicking the logout button will end the user's session and redirect them back to
 * **Footer:**   
 Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
 
+# **Surface:**
+## **Design Choice**
+
+ **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
+
+ **Colours**: I decided to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.    
+ Click [here](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette) to view my **Color Palette**.
+ Main Color Palette:
+ * Fire Opal: #EB6864 
+ * Silver Chalice: #aaaaaa
+ * Cultured: #F8F9FA
+ * Heat Wave: #FD7E14
+ * Green Pantone: #22B24C 
+
+**Icons**: I used [Font Awesome](https://fontawesome.com/start) icons to enhance user experience. The icons are displayed on the all the forms beside the labels..
+
+## Features:
+* [Bootswatch](https://bootswatch.com/journal/) Journal **Template**.
+* [Start Bootstrwap](https://startbootstrap.com/snippets/) for **login** and **register** pages.
+* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - Database
+* [Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/) - Creating the Add/edit forms.
+
+## Future Features:
+* **Pagination-** So only a few recipes will show on on the page and the remainder on the next page etc. At the moment all Recipes are displayed on the same page.
+* **Change Password/Username-** To allow the user to change their details if they wish.
+* **Recover Password-** If the user have forgotton their password will be able to re-set it.
+* **Filter Recipes-** To make it easier to find a certain recipe.
+* **Search Option-** Search a recipe by name.
+
 # Skeleton:
 ## **Wireframes**
 My Wireframes:  
@@ -131,17 +148,6 @@ My Wireframes:
 I created my wireframes and Flowchart using [MockFlow](https://www.mockflow.com/) for various devices.
 The **edit recipe page**  will be the same as the **add recipe page** hence I did not create an official wireframe for this page.   
 The **delete recipie** will display a pop up to confirm with the user if they actually want to delete the recipe.
-
-## Features:
-* Bootswatch Journal Template
-* Startbootstrwap for login and register pages.
-
-## Future Features:
-* **Pagination-** So only a few recipes will show on on the page and the remainder on the next page etc. At the moment all Recipes are displayed on the same page.
-* **Change Password/Username-** To allow the user to change their details if they wish.
-* **Recover Password-** If the user have forgotton their password will be able to re-set it.
-* **Filter Recipes-** To make it easier to find a certain recipe.
-* **Search Option-** Search a recipe by name.
 
 
 
