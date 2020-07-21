@@ -34,10 +34,6 @@
 ## Project Goals:
 
 
-The goal of this project is to create a site that implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
-The users who wish to avail of the site will be able to create their own **online Cookbook**, 
-allowing them to **create**/upload recepies, **read** through their existing recipes/sample recipes
-stored on the site, **update** their recipes and to **delete** recipes.
 
 ## User Stories
 
@@ -57,8 +53,20 @@ stored on the site, **update** their recipes and to **delete** recipes.
 * Website to be easy to use and **visually** **appealing**.
 * Website to easily allow the user to **create, edit, read and delete** recipes.
 
+# **Strategy:**
+The value of this website, is that it allows users to store all their recipes and view them in one place online.
+User's will no longer have to look up recipes online which can be time-consuming.
 
-# **Design Choice**
+The website implements the implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
+The users who wish to avail of the site will be able to create their own **Personal Cookbook**, 
+allowing them to **create**/upload recepies, **read** through their existing recipes/sample recipes
+stored on the site, **update** their recipes and to **delete** recipes they no longer wish.
+
+**Primary Audience** - People who want to store their favourite recipes in one place online.
+
+
+# **Surface:**
+## **Design Choice**
 
  **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
 
@@ -111,7 +119,8 @@ Clicking the logout button will end the user's session and redirect them back to
 * **Footer:**   
 Contains **links** to the developers relevent social media links **Github & Linkedin** which opens in a new tab.
 
-# **Wireframes**
+# Skeleton:
+## **Wireframes**
 My Wireframes:  
 [Desktop](https://github.com/SophieH93/MS3/tree/master/wireframes/desktop
 )   
