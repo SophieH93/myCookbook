@@ -174,9 +174,11 @@ label {
     .form-signin, .form-register {      
       margin-top: 0;
 }
+
     .register-loginLink {
     	font-size: 1.2rem;    
 }
+
     .card {
         margin-bottom: 1rem;
     }
