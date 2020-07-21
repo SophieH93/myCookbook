@@ -59,7 +59,7 @@ h2, h3 {
 }
 
 .index {
-     margin-top: 10rem;
+    margin-top: 10rem;
     margin-bottom: 8rem
 }
 
@@ -67,9 +67,7 @@ h2, h3 {
     font-size: 1.2rem;
 }
 
-.homeBtn {
-	margin-top: 3rem;
-}
+
 
 /* Login & Register page */
 
@@ -167,5 +165,122 @@ label {
     .card {
         margin-bottom: 1rem;
     }
+
+}
+
+
+/* IPAD */
+
+@media only screen and (max-width: 1024px) {
+    		
+    #title {
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .index {
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        margin-left: 3.4rem;
+    }
+
+    
+    #login, #register {
+        height: 100vh;
+    }
+    
+    .form-signin, .form-register {  
+        margin-top: 3em;           
+    }
+
+    h1 {
+            margin-top: 5rem;
+            font-size: 4rem
+    }
+    
+    label  {
+        font-size: 2.2rem;
+        
+    }
+
+    .fas {
+        font-size: 2rem;
+    }
+    
+    .registerBtn {	
+        margin-bottom: 3rem;   
+    }
+
+    .loginBtn {
+        margin-bottom: 3rem;
+}
+          	
+}	
+
+/* IPad pro */
+@media only screen and (max-width: 1366px) {
+
+    .hero-image, #login, #register {
+        height: 85vh;
+    }
+    
+    .index {
+        margin-top: 5rem;
+        margin-left: 3rem;      
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+         margin-top: 3rem;
+    }
+    
+     h3 {
+        font-size: 2.2rem;
+         margin-top: 3rem;
+    }
+    
+    .quote {
+        font-size: 2rem;     
+    }
+	
+    .btn {
+    	font-size: 2.5rem;
+    	display: block;
+    	width: 50%;
+        margin-top: 3rem;
+    	margin-left: 15rem; 
+    	margin-bottom: 2rem;
+    	background-color: #EB6864;
+        border-radius: 4rem;
+    }
+
+    label  {
+    	font-size: 3rem;    			
+    }
+
+    input[type=username],[type=password]  {
+        font-size: 2rem;
+        padding: 1.5rem
+    }
+            
+    .fas {
+        font-size: 2.5rem;
+    }
+
+    .loginBtn, .registerBtn {
+		font-size: 2rem;
+        margin-left: 8rem;
+	}
+
+	p {
+	  font-size: 2rem;
+	}    
 
 }
