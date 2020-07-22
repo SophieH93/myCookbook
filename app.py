@@ -113,10 +113,10 @@ def login():
             if bcrypt.hashpw(request.form['password'].encode('utf-8'),
                             login_user['password']) == login_user['password']:
                 session['username'] = request.form['username']
-                return redirect(url_for('index'))
+                return redirect(url_for('home'))
         flash('Invalide username/password !')
     return render_template('pages/login.html')
-    
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -129,7 +129,7 @@ def register():
             users.insert({'name' : request.form['username'],
                         'password' : hashpass})
             session['username'] = request.form['username']
-            return redirect(url_for('index'))
+            return redirect(url_for('home'))
         flash('That username already exists!')
     return render_template('pages/register.html')
 
@@ -138,7 +138,7 @@ def register():
 def logout():
 
     session.pop("username",  None)
-    return redirect(url_for("index"))
+    return redirect(url_for("home"))
 
 if __name__ == '__main__':
     app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=True)
