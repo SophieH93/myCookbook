@@ -43,11 +43,13 @@ def single_recipe_info(recipe_id):
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("pages/single_recipe_info.html",
                             selected_recipe=selected_recipe)
-   
 
+   
 @app.route('/add/recipe', methods=["GET", "POST"]) 
-def insert_recipe():
-  
+def addRecipe(): 
+    """
+    Add Recipe to the database
+   """
     if request.method == "POST":
         recipes = mongo.db.recipes 
 
@@ -66,10 +68,11 @@ def insert_recipe():
         form = addRecipeForm()
         return render_template('pages/add-recipe.html', form=form)
 
-@app.route("/edit/recipe/<recipe_id>", methods=["POST"])
-def update_recipe(recipe_id):
+
+@app.route("/edit/recipe/<recipe_id>", methods=["GET", "POST"])
+def editRecipe(recipe_id):
     """
-    Update the Recipe in the database
+    Update the Recipe in the database and returns users to recipe page
    """
     recipes = mongo.db.recipes
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -91,6 +94,7 @@ def update_recipe(recipe_id):
         return render_template('pages/edit-recipe.html',
                                 selected_recipe=selected_recipe, form=form)
 
+
 @app.route('/delete-recipe/<recipe_id>')
 def deleteRecipe(recipe_id):
     '''
@@ -98,6 +102,7 @@ def deleteRecipe(recipe_id):
     '''
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)}) 
     return redirect(url_for('recipes'))
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -111,6 +116,7 @@ def login():
                 return redirect(url_for('index'))
         flash('Invalide username/password !')
     return render_template('pages/login.html')
+    
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
