@@ -1,4 +1,5 @@
 # Personal Cookbook!
+![](static/images/mockup.JPG)
 
 # **Table of Contents:**
 * UX    
@@ -34,6 +35,8 @@
 * Closing Notes
 * Credits
 * Disclaimer
+
+
 
 # **UX**
 [Live Website](https://my-cookbook2020.herokuapp.com/)
