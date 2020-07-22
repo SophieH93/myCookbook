@@ -5,28 +5,34 @@
 			<h1>Create Your Account</h1>
 			<form method="POST" class="form-register">
 				<div class="form-group">
-					<i class="fas fa-user"></i><label for="username">Username:</label>
-					<input autofocus="" class="form-control" id="inputUserame" name="username" placeholder="Enter username" required="" type="text">
-				</div>
-				<div class="form-group">
-					<i class="fas fa-lock"></i> <label for="password">Password:</label> 
-					<input class="form-control" id="password" name="password" placeholder="Enter password" required="" type="password">
-				</div>
-				<div class="form-group">
-					<i class="fas fa-lock"></i> <label for="password">Confirm Password:</label>
-					<input class="form-control" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" required="" type="password">
-				</div>
-				<button class="btn registerBtn btn-success btn-block" type="submit">Register</button><br>
-				<p>Already registered? <a href="{{url_for('login')}}">Sign In</a></p>
+					<i class="fas fa-user"></i>
+					<label for="username">Username:</label>
+					<input autofocus="" class="form-control" id="inputUserame" name="username" placeholder="Enter username" required="" type="username">
+					</div>
+					<div class="form-group">
+						<i class="fas fa-lock"></i>
+						<label for="password">Password:</label>
+						<input class="form-control" id="password" name="password" placeholder="Enter password" required="" type="password">
+						</div>
+						<div class="form-group">
+							<i class="fas fa-lock"></i>
+							<label for="password">Confirm Password:</label>
+							<input class="form-control" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" required="" type="password">
+							</div>
+							<button class="btn registerBtn btn-success btn-block" type="submit">Register</button>
+							<br>
+								<p class="register-loginLink"> Already registered? 
+									<a href="{{url_for('login')}}">Sign In</a>
+								</p>
 				{% with messages = get_flashed_messages() %} 
 				{% if messages %}
-				{% for message in messages %}
-				<div class="flash">
-					<p>{{ message }}</p>
-				</div>
+				{% for message in messages %} 
+								<div class="flash">
+									<p>{{ message }}</p>
+								</div>
 				{% endfor %} {% endif %} {% endwith %}
 			</form>
 		</div>
 	</div>
 </section>
-	{% endblock %}
+{% endblock %}

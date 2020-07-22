@@ -1,70 +1,70 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 <section class="container">
-<h1>Edit Recipe</h1>
- <form method="POST" action="{{ url_for('editRecipe', recipe_id=selected_recipe._id) }}" class="add-edit-form">
-    {{ form.hidden_tag() }}
-    <div class="row">
-        <!--Recipe Name-->
-        <div class="form-group col-md-12">
-            <i class="fas fa-utensils"></i>
-            <label for="recipe_name">Recipe Name:</label>
-            <input type="text" class="form-control" name="recipe_name" id="recipe_name" value="{{ selected_recipe.recipe_name }}">  
-        </div>    
-        <!--Recipe description-->
-        <div class="form-group col-md-12">
-            <i class="fas fa-pencil-alt"></i> 
-            <label for="description">Description:</label> 
-            <textarea class="form-control" name="recipe_description" id="recipe_description" >
-            {{ selected_recipe.description }}
-            </textarea>
-        </div>    
-        <!--Prep Time-->
-        <div class="form-group col-md-6">
-            <i class="fas fa-hourglass-half"></i>
-            <label for="prep_time">prep Time:</label> 
-            <input type="number" class="form-control" name="prep_time" id="prep_time" value="{{ selected_recipe.prep_time }}">  
-        </div>    
-        <!--Cook Time-->
-        <div class="form-group col-md-6">
-            <i class="fas fa-clock"></i> 
-            <label for="cook_time">Cook Time:</label> 
-            <input type="number" class="form-control" name="cooking_time" id="cooking_time" value="{{ selected_recipe.cooking_time }}">  
-        </div>    
-    <!--Category-->
-        <div class="form-group col-md-12">
-            <i class="fas fa-utensils"></i> 
-            <label for="category">Meal Type:</label> 
-            <input type="text" class="form-control" name="category" id="rcategory" value="{{ selected_recipe.category }}" >  
+    <h1>Edit Recipe</h1>
+    <form method="POST" action="{{ url_for('editRecipe', recipe_id=selected_recipe._id) }}" class="add-edit-form">
+        {{ form.hidden_tag() }}
+        <div class="row">
+            <!--Recipe Name-->
+            <div class="form-group col-md-12">
+                <i class="fas fa-utensils"></i>
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" class="form-control" name="recipe_name" id="recipe_name" value="{{ selected_recipe.recipe_name }}">  
+            </div>    
+            <!--Recipe description-->
+            <div class="form-group col-md-12">
+                <i class="fas fa-pencil-alt"></i> 
+                <label for="description">Description:</label> 
+                <textarea class="form-control" name="recipe_description" id="recipe_description" >
+                {{ selected_recipe.description }}
+                </textarea>
+            </div>    
+            <!--Prep Time-->
+            <div class="form-group col-md-6">
+                <i class="fas fa-hourglass-half"></i>
+                <label for="prep_time">prep Time:</label> 
+                <input type="number" class="form-control" name="prep_time" id="prep_time" value="{{ selected_recipe.prep_time }}">  
+            </div>    
+            <!--Cook Time-->
+            <div class="form-group col-md-6">
+                <i class="fas fa-clock"></i> 
+                <label for="cook_time">Cook Time:</label> 
+                <input type="number" class="form-control" name="cooking_time" id="cooking_time" value="{{ selected_recipe.cooking_time }}">  
+            </div>    
+            <!--Category-->
+            <div class="form-group col-md-12">
+                <i class="fas fa-utensils"></i> 
+                <label for="category">Meal Type:</label> 
+                <input type="text" class="form-control" name="category" id="rcategory" value="{{ selected_recipe.category }}" >  
+            </div>
+            <!-- Ingredients-->
+            <div class="form-group col-md-12">
+                <i class="fas fa-list-alt"></i>        
+                <label for="ingredients">Ingredients:</label>
+                <textarea class="form-control" name="ingredients" id="ingredients" >
+                {{ selected_recipe.ingredients }}
+                </textarea>  
+            </div>    
+            <!-- Steps-->        
+            <div class="form-group col-md-12">
+                <i class="fas fa-list-ol"></i> 
+                <label for="steps">Steps:</label>
+                <textarea class="form-control" name="steps" id="steps" >
+                {{ selected_recipe.steps }}
+                </textarea>  
+            </div>    
+            <!-- Image Recipe-->
+            <div class="form-group col-md-12">
+                <i class="fas fa-image"></i> 
+                <label for="image">Recipe Image:</label> 
+                <input type="text" class="form-control" name="image" id="image" value="{{ selected_recipe.image }}" placeholder="Provide URL for your recipe image">  
+            </div>    
+            <!-- Submit-->  
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a class="btn btn-primary" href="{{ url_for('recipes') }}">Cancel</a>       
+            </div>
         </div>
-        <!-- Ingredients-->
-        <div class="form-group col-md-12">
-            <i class="fas fa-list-alt"></i>        
-            <label for="ingredients">Ingredients:</label>
-            <textarea class="form-control" name="ingredients" id="ingredients" >
-            {{ selected_recipe.ingredients }}
-            </textarea>  
-        </div>    
-        <!-- Steps-->        
-        <div class="form-group col-md-12">
-            <i class="fas fa-list-ol"></i> 
-            <label for="steps">Steps:</label>
-            <textarea class="form-control" name="steps" id="steps" >
-            {{ selected_recipe.steps }}
-            </textarea>  
-        </div>    
-        <!-- Image Recipe-->
-        <div class="form-group col-md-12">
-            <i class="fas fa-image"></i> 
-            <label for="image">Recipe Image:</label> 
-            <input type="text" class="form-control" name="image" id="image" value="{{ selected_recipe.image }}" placeholder="Provide URL for your recipe image">  
-        </div>    
-        <!-- Submit-->  
-        <div class="col-md-6">
-            <button type="submit" class="btn btn-primary">Update</button>
-            <a class="btn btn-primary" href="{{ url_for('recipes') }}">Cancel</a>       
-        </div>
-    </div>
-</form>
+    </form>
 </section>
 {% endblock %}

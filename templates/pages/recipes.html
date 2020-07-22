@@ -1,14 +1,10 @@
 {% extends 'layout/base.html' %} {% block content %}
-
-<div class="container"> 
-    <h1>My Recipes</h1>  
-     <div class="row">
-        
+<div class="container">
+	<h1>My Recipes</h1>
+	<div class="row">
             {% for recipe in recipes %}
               {% include "components/recipe_cards.html" %}
             {% endfor %}
-
-
-    </div>     
+    </div>
 </div>
 {% endblock %}
