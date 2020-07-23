@@ -9,12 +9,13 @@ h1 {
   padding: 2rem;
   text-align: center;
   text-shadow: 0 0 2px #fd7e14;
-  
+  text-transform: capitalize;
 }
 
 h2, h3 {
   font-family: 'Lora', serif;
   margin-bottom: 3rem;
+  text-transform: capitalize;
 }
 
 .img-thumbnail {
