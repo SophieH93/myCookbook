@@ -1,0 +1,23 @@
+<div class="col-md-4">
+    <div class="card border-danger"> 
+        <h3 class="card-header">{{ recipe.recipe_name }}</h3>        
+        <a href="{{ url_for('recipe_info', recipe_id=recipe._id) }}"> 
+        {% if recipe.image %}
+                <img class="img-thumbnail" src="{{ recipe.image }}" alt="Recipe image">
+            {% else %}
+                <img src="{{ url_for('static', filename='images/image-holder.jpg') }}"
+                class="img-thumbnail" alt="Image placeholder" />
+            {% endif %}
+        </a>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong> Meal Type: </strong> {{ recipe.category }} </li>     
+            <li class="list-group-item"><strong> Cook Time: </strong> {{ recipe.cooking_time }} mins</li>              
+        </ul>  
+        <div class="card-footer text-muted">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('editRecipe', recipe_id=recipe._id) }}">Edit</a>
+            <a class="btn btn-primary btn-lg" href="{{ url_for('deleteRecipe', recipe_id=recipe._id) }}" role="button">Delete</a>      
+        </div>
+    </div>
+     
+</div>
+
