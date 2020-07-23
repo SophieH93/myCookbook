@@ -35,13 +35,13 @@ def recipes():
                             recipes=mongo.db.recipes.find())
 
 
-@app.route('/single_recipe_info/<recipe_id>')
-def single_recipe_info(recipe_id):
+@app.route('/recipe/info/<recipe_id>')
+def recipe_info(recipe_id):
     '''
     Displays info about a selected recipe.
     '''
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("pages/single_recipe_info.html",
+    return render_template("pages/recipe-info.html",
                             selected_recipe=selected_recipe)
 
    
@@ -51,11 +51,10 @@ def addRecipe():
     Add Recipe to the database
    """
     if request.method == "POST":
-        recipes = mongo.db.recipes 
+        recipes = mongo.db.recipes
 
         recipes.insert_one({
             "recipe_name": request.form.get("recipe_name"),
-            "description": request.form.get("recipe_description"),
             "prep_time": request.form.get("prep_time"),
             "cooking_time": request.form.get("cooking_time"),
             "category": request.form.get("category"),
@@ -80,7 +79,6 @@ def editRecipe(recipe_id):
     if request.method == "POST":
         recipes.update({"_id": ObjectId(recipe_id)}, {
             "recipe_name": request.form.get("recipe_name"),
-            "description": request.form.get("recipe_description"),
             "prep_time": request.form.get("prep_time"),
             "cooking_time": request.form.get("cooking_time"),
             "category": request.form.get("category"),
@@ -88,7 +86,7 @@ def editRecipe(recipe_id):
             "steps": request.form.get('steps'),
             "image": request.form.get("image")
         })
-        return redirect(url_for('single_recipe_info', recipe_id=recipe_id))
+        return redirect(url_for('recipe_info', recipe_id=recipe_id))
     else:
         form = addRecipeForm()
         return render_template('pages/edit-recipe.html',

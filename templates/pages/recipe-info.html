@@ -8,9 +8,6 @@
         </div>                   
             <div class="col">
           <div class="card border-danger "> 
-               <div class="card-body">
-                <h2 class="card-description">{{ selected_recipe.description }}</h2>               
-            </div>
             {% if selected_recipe.image %}
                 <img class="img-fluid" src="{{ selected_recipe.image }}" alt="Recipe image">
             {% else %}
