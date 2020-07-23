@@ -30,7 +30,9 @@ def home():
 def recipes():
     """
     Displays users recipes
-    """
+    """  
+
+
     return render_template('pages/recipes.html',
                             recipes=mongo.db.recipes.find())
 
@@ -137,6 +139,15 @@ def logout():
 
     session.pop("username",  None)
     return redirect(url_for("home"))
+
+@app.errorhandler(404)
+def page_not_found(e):
+    """
+    Route for  404 errors
+    """
+    return render_template('components/404.html',
+                           title="Page Not Found!"), 404
+
 
 if __name__ == '__main__':
     app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=True)
