@@ -63,9 +63,9 @@
 The value of this website, is that it allows users to store all their recipes and view them in one place online.
 User's will no longer have to look up recipes online which can be time-consuming.
 
-The website implements the implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
+The website implements the [CRUD](https://www.codecademy.com/articles/what-is-crud) functionality. 
 The users who wish to avail of the site will be able to create their own **Personal Cookbook**, 
-allowing them to **create**/upload recepies, **read** through their existing recipes/sample recipes
+allowing them to **create**/upload recepies, **read** through their existing recipes recipes
 stored on the site, **update** their recipes and to **delete** recipes they no longer wish.
 
 **Primary Audience** - People who want to store their favourite recipes in one place online.
@@ -78,7 +78,7 @@ different categories e.g breakfast, lunch etc.
 # **Structure**
 
 * **Navbar:**   
-If the user is **not logged in** the navbar contains a **Register & Login** links.   
+If the user is **not logged in** the navbar contains a **Register & Login** link.   
 If the user is **logged in** the navbar contains a **Recipes, Add Recipes, Logout** links.
 **Python** will determine is the user is logged in to the site or not by checking **if session.username** and passes this data to **Jinja** to 
 display the correct navbar for the user.   
@@ -87,20 +87,20 @@ display the correct navbar for the user.
 Contains a form where the user enters a **Username, Password and Confirm Password** field. The Passwords must match and are **hashed** for security purposes.    
 
 * **Login Page:**   
-Contains a form for the user to enter their **Psername & Password** allowing them to log into their account, providing their details are corrent.   
+Contains a form for the user to enter their **Username & Password** allowing them to log into their account, providing their details are corrent.   
 If the details match the ones in the database, the user is redirected to the home pages and informed with a **flash message** that they have successfully logged in.
 
-* **My Recipes:**  
-Allows the user to view all their recipes in a card formatat. The card will displays the **recipe image, meal type, cooking time** and two **buttons, edit & delete**.
+* **Recipes Page:**  
+Allows the user to view all their recipes in a card format in a 3 column row. The card will displays the **recipe image, meal type, cooking time** and two **buttons, edit & delete**.
 
-* **Single Recipe Page:**   
+* **Recipe Page:**   
 Renders when the user clicks on the recipe card.  This page will display informaiton about the selected recipe.
 
 * **Add Recipes Page:**  
 The user is able to add their recipe through a form which is validated. When the user has added their recipe to the database they are redirected to the **Recipe page**.
 
 * **Edit Recipes Page:**  
-The user is able to update information about a recipe. The form layout is the same as the *add recipe page**.   
+The user is able to update information about a recipe. The form layout is the same as the *add recipe page*.   
 The page also contains two **buttons**, **edit** and **cancel**.
 
 * **Delete Recipes:**
@@ -119,7 +119,7 @@ Contains **links** to the developers relevent social media links **Github & Link
  **Typography**: [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans&query=Open+Sans#standard-styles) for the **body** and [Lora](https://fonts.google.com/specimen/Lora?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) for **H1** headings. These fonts where choosen from Google Fonts. I initally chose Lora first for the heading and [Google Fonts](https://fonts.google.com/?preview.text=My+Cookbook&preview.text_type=custom&sidebar.open&selection.family=Lora|Open+Sans#standard-styles) recommended Open Sans as it's complimentary font.
 
  **Colours**: I decided to use the [Bootswatch: Journal](https://bootswatch.com/journal/) template for my site which provided me with a colour template.    
- Click [here](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette) to view my **Color Palette**.
+ Click [here](https://github.com/SophieH93/myCookbook/tree/master/wireframes/Colour-Palette) to view my **Color Palette**.  
  Main Color Palette:
  * Fire Opal: #EB6864 
  * Silver Chalice: #aaaaaa
@@ -236,7 +236,7 @@ Due to the scope of the website, there will need to be a lot of testing required
 
 * **Plan-** I will need to ensure all the links work properly so when the user clicks on one they are brought to the correct page.
 
-* **Implementation-** Chcek that the nav links go to the correct page and the social media links open in a new tab to the correct website.
+* **Implementation-** Check that the nav links go to the correct page and the social media links open in a new tab to the correct website.
 
 * **Testing-** Use **session variables** and jinja **if/else** statements for the navigation so when the user logs in they are displayed with a different navbar.    
   Use **target="_blank"** to open the **social** media links in a new tab.
@@ -245,7 +245,7 @@ Due to the scope of the website, there will need to be a lot of testing required
 
 ## **Create an account:**
 * **Plan**-I will need to implement a way that a user will be able to create an account and that their **information** is **stored** in a **database**.        
-This invloves checking that the users **passwords match** when they create a password and confirmed the password.   
+This invloves checking that the users **passwords match** when they create a password and confirm the password.   
 I will need to **research** the best way to create this feature that's also easy for the user to create an account and properly hash the password when 
 it's stored into the database.
 
@@ -288,13 +288,13 @@ a flash message is triggered to let the user know that their password/username i
 
 * **Result-** Working properly. Recipe stored into the MongoDB under the 'recipes' collection.
 
-## **Single Recipe Page:**
+## **Recipe Page:**
 
 * **Plan-** I will need to ensure that when the user selects one of their recipes that the correct recipe info is pulled fromt the database.
 
 * **Implementation-** I will need to create a new route that fetches the recipe from the MongoDB.
 
-* **Testing-** I created a few recipes and using **select_recipe** was able to pull the correct info from the database when clicked on a specific recipe.
+* **Testing-** I created a few recipes and using **select_recipe** which was able to pull the correct info from the database when clicked on a specific recipe.
 
 * **Result-** The selected recipe is displaying the proper info.
 
@@ -313,8 +313,8 @@ a flash message is triggered to let the user know that their password/username i
 * **Plan-** I will need to ensure that when the **edit button** is clicked the user will be able to edit their recipe. I will also need to ensure that the informaiton is properly updated and stored in the database.
 
 * **Implementation-** This testing will be similar to the create recipe as in to make sure all validation is inputted.
-* **Testing-**
-* **Result-**
+* **Testing-** I edited my sample recipes to test that the information is update properly.
+* **Result-** Works properly and new information is displayed for the user and updated in the database. 
 
 
 ## **Delete Recipes:**
