@@ -417,7 +417,8 @@ pip3 install -r requirements.txt
 
 10. Click **Open App** to view the app.
     
-# Closing Notes
+# Errors
+I was silly enough to commit the env.py file exposing my details for my database. I have deleted that database and created a new secure database.
 
 # Credits
 [Pretty Printed Youtube](https://www.youtube.com/watch?v=vVx1737auSE) for creating **registration/login**.   
