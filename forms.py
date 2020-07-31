@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, TextAreaField, IntegerField, SelectField
+from wtforms import StringField, SubmitField, TextAreaField, IntegerField
 from wtforms.validators import DataRequired, Length, EqualTo
 
 
@@ -12,7 +12,6 @@ class addRecipeForm(FlaskForm):
                                 validators=[DataRequired()])
     ingredients = TextAreaField('Ingredients',
                                 validators=[DataRequired()])
-    steps = TextAreaField('Steps',
-                               validators=[DataRequired()])
+    steps = TextAreaField('Steps', validators=[DataRequired()])
     image = StringField('Recipe Image')
     submit = SubmitField('Add Recipe')

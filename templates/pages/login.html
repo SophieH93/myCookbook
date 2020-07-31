@@ -2,15 +2,7 @@
 <section class="container-fluid" id="login">
 	<div class="row">
 		<div class="col">
-        {% with messages = get_flashed_messages() %} 
-		  {% if messages %} 
-		  {% for message in messages %}
-			<div class="flash">
-				<p>{{ message }}</p>
-			</div>
-		  {% endfor %} 
-		  {% endif %} 
-		{% endwith %}
+        
 			<h1>Login</h1>
 			<form class="form-signin" method="post">
 				<div class="row">
@@ -30,6 +22,15 @@
 							<a href="{{url_for('register')}}">Register now</a>
 						</p>
 					</form>
+                    {% with messages = get_flashed_messages() %} 
+		  {% if messages %} 
+		  {% for message in messages %}
+			<div class="flash">
+				<p>{{ message }}</p>
+			</div>
+		  {% endfor %} 
+		  {% endif %} 
+		{% endwith %}
 				</div>
 			</div>
 		</section>

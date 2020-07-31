@@ -410,7 +410,7 @@ pip3 install -r requirements.txt
     * PORT: 5000
     * MONGO_URI: *link to your MongoDB database*
     * SECRET_KEY: *your secret key* 
-    * DEBUG: FALSE   
+      
 **Note-** your MONGO_URI and SECRET_KEY must match the ones you entered in .env.py file
 
 9. **Deploy -> Manual Deploy** select the master branch and click **deploy branch** button.

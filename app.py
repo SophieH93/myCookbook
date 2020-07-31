@@ -30,11 +30,10 @@ def home():
 def recipes():
     """
     Displays users recipes
-    """  
-
-
-    return render_template('pages/recipes.html',
-                            recipes=mongo.db.recipes.find())
+    """
+    users = session["username"]
+    return render_template('pages/recipes.html',  recipes=mongo.db.recipes.find({"users": users}))
+                            
 
 
 @app.route('/recipe/info/<recipe_id>')
