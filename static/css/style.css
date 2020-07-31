@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9fa;
@@ -7,6 +8,7 @@ body {
 h1 {
   font-family: 'Lora', serif;
   padding: 2rem;
+  margin-top: 6rem;
   text-align: center;
   text-shadow: 0 0 2px #fd7e14;
   text-transform: capitalize;
@@ -19,8 +21,8 @@ h2, h3 {
 }
 
 .img-thumbnail {
-    width: 100%;
-    height: 30vh;
+  width: 100%;
+  height: 30vh;
 }
 
 .img-fluid {
@@ -29,13 +31,13 @@ h2, h3 {
 }
 
 .card {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+}
 
 .card:hover {
-	transform: scale(1);
-    cursor: zoom-in;
-	box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  transform: scale(1);
+  cursor: zoom-in;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
 /* Navbar */
@@ -78,7 +80,7 @@ h2, h3 {
 
 .index {
   margin-top: 10rem;
-  margin-bottom: 8rem
+  margin-bottom: 8rem;
 }
 
 .quote {
@@ -96,18 +98,13 @@ h2, h3 {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 80vh;
-  
-}
-
-.form-signin {
-  margin-top: 4rem;
+  height: 85vh;
 }
 
 .form-signin, .form-register {
   max-width: 30rem;
-  min-width: 250px;
-  margin: auto;  
+  padding-top: 2.5rem;
+  margin: auto;
 }
 
 form {
@@ -121,13 +118,12 @@ form {
   border-radius: 4rem;
 }
 
-.loginBtn{
-   margin-top: 3rem;
+.loginBtn {
+  margin-top: 3rem;
 }
 
 .register-loginLink {
   margin-top: 1rem;
-  
 }
 
 /* Add/Edit Recipe Page */
@@ -169,7 +165,7 @@ label {
 
 .page-footer {
   text-align: center;
-  }
+}
 
 .media-icons {
   font-size: 3rem;
@@ -185,39 +181,53 @@ label {
     margin-bottom: 0;
     margin-left: 2rem;
   }
+
   #title {
     font-size: 2.6rem;
   }
+
   h2 {
     font-size: 1.8rem;
   }
+
   .quote {
     font-size: 1rem;
     background: rgba(33, 33, 33, 0.7);
     color: #fff;
   }
+
   #register {
-    height: 100vh;
+    height: 110vh;
   }
+
   #login {
     height: 75vh;
   }
-  .form-register, .form-signin {
-    margin-top: 0;
-  }
+
   form {
     margin-top: 0rem;
     margin-bottom: 0;
   }
+
   .loginBtn, .registerBtn {
     font-size: 1rem;
     margin-top: 1rem;
   }
+
   .register-loginLink {
     margin-top: 0;
   }
+
   .card {
     margin-bottom: 1rem;
+  }
+
+  #login {
+    height: 85vh;
+  }
+
+  .form-signin, .form-register {
+    padding-top: 0;
   }
 }
 
@@ -227,235 +237,105 @@ label {
   .navbar {
     font-size: 1.7rem;
   }
+
   .navbar-brand {
     font-size: 2rem;
   }
+
   .hero-image {
     height: 75vh;
   }
+
   .index {
     margin-top: 7rem;
     margin-left: 4rem;
   }
+
   #title {
     font-size: 5rem;
   }
+
   h2 {
     font-size: 2.2rem;
   }
+
   .quote {
     font-size: 2rem;
   }
-
-
+}
 /* IPad pro */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
 
-    .navbar {
+  .navbar {
     font-size: 2.5rem;
   }
 
   .navbar-brand {
     font-size: 4rem;
   }
-    
-    .hero-image {
-        height: 85vh;
-    }
-    
-    .index {
-       
-        margin-top: 10rem;
-        margin-left: 3rem;   
-          
-    }
-    
-     #title {
+
+  .hero-image {
+    height: 85vh;
+  }
+
+  .index {
+    margin-top: 10rem;
+    margin-left: 3rem;
+  }
+
+  #title {
     font-size: 7.5em;
   }
-    
-    h2 {
-        font-size: 3rem;
-         margin-top: 2rem;
-    }
-    
-     h3 {
-        font-size: 2.5rem;
-         margin-top: 4rem;
-    }
-    
-    
-    .quote {
-      background: rgba(33, 33, 33, 0.7);
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
-  
-   
-    }
-        
-    .btn {
-    	font-size: 2.5rem;
-    	display: block;
-    	width: 50%;
-        margin-top: 3rem;
-    	margin-left: 15rem; 
-    	
-    	background-color: #EB6864;
-        border-radius: 4rem;
-    }
+  }
 
-  label  {
-        font-size:2.9rem;
-        
-    }
-    
-     input[type=username],[type=password]  {
-        font-size: 2rem;
-        padding: 1.5rem
-    }
-     
-  
-  
-    .fas {
-        font-size: 2.3rem;
-    }
-    
-      h1 {
-            margin-top: 5rem;
-            font-size: 4rem
-    }
+  .btn {
+    font-size: 2.5rem;
+    display: block;
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    background-color: #EB6864;
+    border-radius: 4rem;
+  }
 
-    .registerBtn, .loginBtn {	
-        margin-left: 6rem;   
-    }
-    
-    .register-loginLink{
-      font-size: 2rem;
-    }
+  label {
+    font-size: 2.9rem;
+  }
 
+  input[type=username],[type=password] {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
 
+  .fas {
+    font-size: 2.3rem;
+  }
 
+  h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  .registerBtn, .loginBtn {
+    margin-left: 6rem;
+  }
+
+  .register-loginLink {
+    font-size: 2rem;
+  }
 }
 
-
-
-
-
-
-
-
-
-  /* IPAD 
-
-@media only screen and (max-width: 1024px) {
-    		
-    #title {
-        font-size: 5.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .index {
-        margin-top: 0;
-        margin-bottom: 3rem;
-    }
-
-    .quote {
-        font-size: 1.5rem;
-        margin-left: 3.4rem;
-    }
-
-    
-    #login, #register {
-        height: 100vh;
-    }
-    
-    .form-signin, .form-register {  
-        margin-top: 3em;           
-    }
-
-    h1 {
-            margin-top: 5rem;
-            font-size: 4rem
-    }
-    
-    label  {
-        font-size: 2.2rem;
-        
-    }
-
-    .fas {
-        font-size: 2rem;
-    }
-    
-    .registerBtn {	
-        margin-bottom: 3rem;   
-    }
-
-    .loginBtn {
-        margin-bottom: 3rem;
-}
-          	
-}	
-
-/* IPad pro 
-@media only screen and (max-width: 1366px) {
-
-    .hero-image, #login, #register {
-        height: 85vh;
-    }
-    
-    .index {
-        margin-top: 5rem;
-        margin-left: 3rem;      
-    }
-    
-    h2 {
-        font-size: 2.3rem;
-         margin-top: 3rem;
-    }
-    
-     h3 {
-        font-size: 2.2rem;
-         margin-top: 3rem;
-    }
-    
-    .quote {
-        font-size: 2rem;     
-    }
-	
-    .btn {
-    	font-size: 2.5rem;
-    	display: block;
-    	width: 50%;
-        margin-top: 3rem;
-    	margin-left: 15rem; 
-    	margin-bottom: 2rem;
-    	background-color: #EB6864;
-        border-radius: 4rem;
-    }
-
-    label  {
-    	font-size: 3rem;    			
-    }
-
-    input[type=username],[type=password]  {
-        font-size: 2rem;
-        padding: 1.5rem
-    }
-            
-    .fas {
-        font-size: 2.5rem;
-    }
-
-    .loginBtn, .registerBtn {
-		font-size: 2rem;
-        margin-left: 8rem;
-	}
-
-	p {
-	  font-size: 2rem;
-	}    
-
-}
