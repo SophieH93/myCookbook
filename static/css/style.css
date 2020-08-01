@@ -35,11 +35,14 @@ h2, h3 {
 }
 
 .card:hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  cursor: -webkit-zoom-in;
   cursor: zoom-in;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+          box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
-
 /* Navbar */
 
 .navbar {
@@ -235,7 +238,7 @@ label {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .navbar-brand {
@@ -284,11 +287,11 @@ label {
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
 
   .navbar {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .navbar-brand {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .hero-image {
@@ -302,6 +305,10 @@ label {
 
   #title {
     font-size: 7.5em;
+  }
+
+  h1 {
+    padding-top: 6rem;
   }
 
   h2 {
@@ -354,5 +361,11 @@ label {
   .register-loginLink {
     font-size: 2rem;
   }
+  .media-icons {    
+    font-size: 5rem;
+}
+small {    
+    font-size: 1.2rem;
+}
 }
 
