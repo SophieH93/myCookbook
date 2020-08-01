@@ -18,6 +18,7 @@ app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY')
 mongo = PyMongo(app)
 
 @app.route("/")
+@app.route("/home")
 def home():
     """
     When page loads, home page is displayed.
