@@ -11,13 +11,13 @@ if os.path.exists("env.py"):
 
 app = Flask(__name__)
 
-"""MAKE THESE VARIABLES"""
+
 app.config["MONGO_DBNAME"] = "myCookbook"
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY')
 mongo = PyMongo(app)
 
-@app.route("/")
+
 @app.route("/home")
 def home():
     """
@@ -31,9 +31,7 @@ def recipes():
     """
     Displays users recipes
     """
-    users = session["username"]
-    return render_template('pages/recipes.html',  recipes=mongo.db.recipes.find({"users": users}))
-                            
+    return render_template('pages/recipes.html',  recipes=mongo.db.recipes.find())
 
 
 @app.route('/recipe/info/<recipe_id>')
@@ -62,6 +60,7 @@ def addRecipe():
             "ingredients": request.form.get('ingredients'),
             "steps": request.form.get('steps'),
             "image": request.form.get("image")
+            
         })
         return redirect(url_for('recipes'))
     else:
@@ -145,7 +144,7 @@ def page_not_found(e):
     Route for  404 errors
     """
     return render_template('components/404.html',
-                           title="Page Not Found!"), 404
+                           title="Page Not Found!")
 
 
 if __name__ == '__main__':
