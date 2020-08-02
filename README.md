@@ -1,5 +1,5 @@
 # Personal Cookbook!
-![](static/images/mockup.JPG)
+![](static/images/mockup1.JPG)
 
 # **Table of Contents:**
 * UX    
