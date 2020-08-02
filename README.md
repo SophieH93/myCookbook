@@ -225,8 +225,9 @@ images: <string>
 * [W3C Markup Validation](https://validator.w3.org/)
 * [WSC CSS Validaion](https://jigsaw.w3.org/css-validator/)
 * [MockFlow](https://www.mockflow.com/)
-* [Dirty Markup Formatter](https://www.10bestdesign.com/dirtymarkup/)
-* [PEP8 Validaion](http://pep8online.com/checkresult)
+* [Code Beautify](https://codebeautify.org/)
+* [PEP8 Validaion](http://pep8online.com)
+* [Python Formatter](https://pythoniter.appspot.com/)
 
 # Testing
 Due to the scope of the website, there will need to be a lot of testing required during this project.
@@ -327,6 +328,14 @@ a flash message is triggered to let the user know that their password/username i
 
 * **Result-** The selected Recipe is deleted when the **delete button** is clicked on and also removed from the MongoDB.
 
+## **Lighthouse Test Results:**
+**Mobile:**   
+![](static/images/lighthouseMobile.JPG)   
+**Desktop**:    
+![](static/images/lighthouseDesktop.JPG)
+
+I used  [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsinator](http://www.responsinator.com/) to test the styling, layout and responsiveness.   
+I also manually tested the app with debugger: **debug=True** throughout all the development process.
 
 # Bugs
 * **Bug:** I wanted to create **two cards** side-by side on the *Single Recipe Page* with the second card displaying the Ingredients and Steps in list format.  
@@ -335,6 +344,7 @@ the page with *max-width & auto margin* to center the recipe on the page.
 
 * **Bug:** I wanted to **display** my **recipe's** **side by side** using the Bootsrap grid system. I was having trouble achieving as my cards were only displaying ubove each other and could not understand why.   
 **Fix:** Took about a week, but discovered if I removed the **container & row divs** from the **recipe cards html** the recipes would display properly.
+
 
 
 
