@@ -337,6 +337,10 @@ a flash message is triggered to let the user know that their password/username i
 I used  [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsinator](http://www.responsinator.com/) to test the styling, layout and responsiveness.   
 I also manually tested the app with debugger: **debug=True** throughout all the development process.
 
+**User Testing** was carried out throught the process, having friends and family test the website to see if it was responsive on their devices & gathering back feedback for style or bugs.
+
+
+
 # Bugs
 * **Bug:** I wanted to create **two cards** side-by side on the *Single Recipe Page* with the second card displaying the Ingredients and Steps in list format.  
  **Fix:** Unfortunately due to time restrictions I was unable to solve this bug so I amended the page to display just one card with the recipe details and styled
@@ -344,7 +348,6 @@ the page with *max-width & auto margin* to center the recipe on the page.
 
 * **Bug:** I wanted to **display** my **recipe's** **side by side** using the Bootsrap grid system. I was having trouble achieving as my cards were only displaying ubove each other and could not understand why.   
 **Fix:** Took about a week, but discovered if I removed the **container & row divs** from the **recipe cards html** the recipes would display properly.
-
 
 
 
