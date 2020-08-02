@@ -72,7 +72,7 @@ h2, h3 {
 /* Home page */
 
 .hero-image {
-  background-image: url(../images/cook2.jpg);
+  background-image: url(../images/cookingBoard.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -98,8 +98,8 @@ h2, h3 {
 /* Login & Register page */
 
 #login, #register {
-  background-image: -o-radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
-  background-image: radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/img2.jpg);
+  background-image: -o-radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/colourfulFood.jpg);
+  background-image: radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/colourfulFood.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
