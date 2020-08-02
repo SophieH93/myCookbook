@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f8f9fa;
@@ -37,13 +36,14 @@ h2, h3 {
 
 .card:hover {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-  -webkit-box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-          box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
+
 /* Navbar */
 
 .navbar {
@@ -85,7 +85,6 @@ h2, h3 {
 
 .index {
   margin-top: 6rem;
-  
 }
 
 .quote {
@@ -136,7 +135,7 @@ form {
 
 .add-edit-form {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 2rem;
   background-image: -o-radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/food.jpg);
@@ -180,385 +179,300 @@ label {
   padding: 0.3rem;
   margin-top: 1rem;
 }
+
 /* Pixal */
-@media only screen and (min-width: 411px)  and (max-height: 823px) {
- 
 
-   .index {
+@media only screen and (min-width: 411px) and (max-height: 823px) {
+  .index {
     margin-top: 1rem;
-   
   }
-
   #title {
     font-size: 2.7rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 2.2rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1.5rem;
-   
   }
-  
-  .quote{
-  background: rgba(33, 33, 33, 0.7);
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
     margin-bottom: 0rem;
   }
-  
   .btn {
-   font-size: 1rem;
+    font-size: 1rem;
     margin-top: 1rem;
-}
-     .form-signin, .form-register {
-padding-top: 0rem;
-  
-}
-   #register {
-     height: 105vh;    
   }
-  
-}
-@media only screen and (min-width: 411px) and (max-height: 731px) and (orientation: landscape) {
- #login {
-     height: 225vh;    
+  .form-signin, .form-register {
+    padding-top: 0rem;
   }
+  #register {
+    height: 105vh;
+  }
+}
 
-  
+@media only screen and (min-width: 411px) and (max-height: 731px) and (orientation: landscape) {
+  #login {
+    height: 225vh;
+  }
   .hero-image {
     height: 98vh;
   }
-   .btn {
-   font-size: 1.3rem;
+  .btn {
+    font-size: 1.3rem;
     width: 30%;
-
-} 
+  }
 }
-/* Samsung Galaxy S5*/
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
 
-   .index {
+/* Samsung Galaxy S5*/
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .index {
     margin-top: 0rem;
-   
   }
   #title {
     font-size: 2.3rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 1.5rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1.2rem;
-   
   }
-  
-  .quote{
-  background: rgba(33, 33, 33, 0.7);
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
     margin-bottom: 0rem;
   }
-  
   .btn {
-   font-size: 1rem;
+    font-size: 1rem;
     margin-top: 1rem;
-}
-  
- .media-icons {    
+  }
+  .media-icons {
     font-size: 2rem;
+  }
 }
-}
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px)  and (orientation: landscape) {
 
-
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) {
   #title {
     font-size: 2.3rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 1.2rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1rem;
-   
   }
- .quote {
+  .quote {
     font-size: 0.9rem;
-   
   }
-  
   .btn {
-   font-size: 1rem;
+    font-size: 1rem;
     padding: 0rem;
     margin-top: 0rem;
-}
-  
- .media-icons, small {    
+  }
+  .media-icons, small {
     font-size: 1rem;
-}
+  }
 }
 
 /* Iphone 5*/
-@media only screen and (min-width: 320px) and (max-height: 568px) {
- .navbar-brand {
-  font-size: 1.8rem;
- }
-   .index {
-    margin-top: 0rem;
-   
-  }
 
+@media only screen and (min-width: 320px) and (max-height: 568px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .index {
+    margin-top: 0rem;
+  }
   #title {
     font-size: 2rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 1.5rem;
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
-  
-  .quote{
-  background: rgba(33, 33, 33, 0.7);
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
     margin-bottom: 0rem;
     font-size: 1rem;
   }
-  
   .btn {
-   font-size: 1rem;
+    font-size: 1rem;
     margin-top: 1rem;
-}
-   .media-icons {    
+  }
+  .media-icons {
     font-size: 1.5rem;
-}
-     #login {
-    height: 100vh;    
   }
-
-    .form-signin {    
-    padding-top: 0rem;    
-    }
-
-    h1 {
+  #login {
+    height: 100vh;
+  }
+  .form-signin {
+    padding-top: 0rem;
+  }
+  h1 {
     padding: 1rem;
-    }
-    #register {
-     height: 135vh;    
+  }
+  #register {
+    height: 135vh;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation : landscape) {
-
-   .index {
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) {
+  .index {
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
-
   #title {
     font-size: 2rem;
-      margin-bottom: 0rem;
-      margin-top: 3.8rem;
+    margin-bottom: 0rem;
+    margin-top: 3.8rem;
   }
-
-   h2 {
+  h2 {
     font-size: 1rem;
-     margin-bottom: 1rem;
-      
+    margin-bottom: 1rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1rem;
     margin-bottom: 0rem;
   }
-  
-  .quote{
- 
+  .quote {
     margin-bottom: 0rem;
-    font-size:0.8rem;
+    font-size: 0.8rem;
   }
-  
   .btn {
-   font-size: 1rem;
+    font-size: 1rem;
     margin-top: 1rem;
-}
-
-   .media-icons {    
+  }
+  .media-icons {
     font-size: 1rem;
     margin-top: 0;
-}
-
-    small {    
+  }
+  small {
     font-size: 0.8rem;
-}   
-    #register {
-    height: 210vh;    
+  }
+  #register {
+    height: 210vh;
   }
 }
-
-
-
 
 /* Iphone 6,7,8*/
+
 @media only screen and (min-width: 375px) and (max-height: 667px) {
-
-    h1 {
-    	 margin-top: 7rem;    
+  h1 {
+    margin-top: 7rem;
   }
-   .index {
+  .index {
     margin-top: 3rem;
-   
   }
-
   #title {
     font-size: 2.3rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 1.5rem;
-
   }
-  
-   h3 {
+  h3 {
     font-size: 1.3rem;
-    
   }
-  
-  .quote{
-  background: rgba(33, 33, 33, 0.7);
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
     margin-bottom: 0rem;
     font-size: 1rem;
   }
-
- .btn {
-   font-size: 1rem;
+  .btn {
+    font-size: 1rem;
     margin-top: 1.2rem;
-    
-}
-
-    .form-signin, .form-register {    
-    padding-top: 0rem;    
-    }
-
-    h1 {
-    padding: 1rem;
-    }
-    #register {
-     height: 111vh;    
   }
-
-
+  .form-signin, .form-register {
+    padding-top: 0rem;
+  }
+  h1 {
+    padding: 1rem;
+  }
+  #register {
+    height: 111vh;
+  }
 }
 
 /* Iphone 6,7,8*/
-@media only screen and (min-width: 375px) and (max-height: 667px)  and (orientation : landscape)  {
 
-    #register {
-     height: 185vh;    
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) {
+  #register {
+    height: 185vh;
   }
-  
-    #login {
-     height: 150vh;    
+  #login {
+    height: 150vh;
   }
 }
 
 /* Iphone X*/
-@media only screen and (min-width: 375px) and (max-height: 812px) {
- 
- h1 {
-    	 margin-top: 7rem;    
-  }
-   .index {
-    margin-top: 3rem;
-   margin-left: 3rem;
-  }
 
+@media only screen and (min-width: 375px) and (max-height: 812px) {
+  h1 {
+    margin-top: 7rem;
+  }
+  .index {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
   #title {
     font-size: 2.3rem;
-     
   }
-
-   h2 {
+  h2 {
     font-size: 1.5rem;
-  margin-top: 2rem;
+    margin-top: 2rem;
   }
-  
-   h3 {
+  h3 {
     font-size: 1.3rem;
-    
   }
-  
-  .quote{
-  background: rgba(33, 33, 33, 0.7);
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
     color: #fff;
     margin-bottom: 4rem;
     font-size: 1rem;
-    
   }
-
- .btn {
-   font-size: 1rem;
+  .btn {
+    font-size: 1rem;
     margin-top: 2rem;
-    
-}
-
-    .form-signin, .form-register {    
-    padding-top: 0rem;    
-    }
-
-    h1 {
+  }
+  .form-signin, .form-register {
+    padding-top: 0rem;
+  }
+  h1 {
     padding: 1rem;
-    }
-       #login {
-     height: 75vh;    
   }
-    #register {
-     height: 92vh;    
+  #login {
+    height: 75vh;
   }
-
-
+  #register {
+    height: 92vh;
+  }
 }
 
-@media only screen and (min-width: 375px) and (max-height: 812px) and (orientation : landscape) {
- .btn {
-   font-size: 1rem;
+@media only screen and (min-width: 375px) and (max-height: 812px) and (orientation: landscape) {
+  .btn {
+    font-size: 1rem;
     margin-top: 2rem;
-    
-}
-
-
+  }
 }
 
 /* IPad landscape */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-
- .btn {
+  .btn {
     font-size: 2rem;
-     
-   
   }
-
-   #login {
-    height: 95vh;    
+  #login {
+    height: 95vh;
   }
-
-   #register {
-    height: 120vh;    
+  #register {
+    height: 120vh;
   }
-
 }
