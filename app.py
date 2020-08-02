@@ -104,7 +104,7 @@ def editRecipe(recipe_id):
                                form=form)
 
 
-@app.route('/delete-recipe/<recipe_id>')
+@app.route('/delete/recipe/<recipe_id>')
 def deleteRecipe(recipe_id):
     '''
     Delete Recipe from the Database
@@ -162,4 +162,4 @@ def page_not_found(e):
                            title='Page Not Found!')
 
 if __name__ == '__main__':
-    app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=True)
+    app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=False)
